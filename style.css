@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --backColor: #051A30;
+    --headerColor: #04121F;
+    --accentTeal: #00BAA6;
+    --mainTextColor: #6D7CB1;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--backColor);
+    color: var(--mainTextColor);
+    font-family: "Montserrat";
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    padding: 0 7% 0 7%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: var(--headerColor);
+    color: var(--mainTextColor);
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header ul {
+    margin-right: 12%;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    list-style-type: none;
+}
+
+#navElement {
+    transition: all 300ms ease-in-out;
+    position: relative;
+}
+
+#navElement::after {
+    content: '';
+    position: absolute;
+    height: 0.06rem;
+    width: 100%;
+    background-color: #00BAA6;
+    left: 0;
+    bottom: -5px;
+    transform: scale(0,1);
+    transform-origin: 0% 100%;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+#navElement:hover::after {
+    transform: scale(1,1);
+    opacity: 1;
+}
+
+#navElement:hover {
+    color: #a8b4de;
+}
+
+#logo {
+    height: 65px;
+    width: 65px;
+}
+
+#contactButton {
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+    color: white;
+    border: solid var(--headerColor) 1px;
+    border-radius: 5px;
+    background: rgb(0,145,130);
+    background: linear-gradient(121deg, rgba(0,145,130,1) 0%, rgba(0,186,166,1) 100%); 
+    transition: all 300ms ease-in-out; 
+    letter-spacing: 0.1rem;
+}
+
+#contactButton:hover {
+    border: solid white 1px;
+}
+
+.mainContent {
+    margin: 0 15% 0 15%;
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+}
+
+#downButton {
+    height: 75px;
+    width: auto;
+    margin: 30px 30px 30px 45%;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+#downButton:hover {
+    transform: scale(110%);
+    fill: var(--backColor);
+}
+
+#profilePic {
+    position: relative;
+    height: 230px;
+    width: 230px;
+    border-radius: 100%;
+    z-index: 100;
+}
+
+#profilePicDiv {
+    position: relative;
+
+}
+
+#backShadow {
+    z-index: 0;
+    position: absolute;
+    height: 230px;
+    width: 230px;
+    border-radius: 100%;
+    left: 20px;
+    top: 10px;
+    background-color: var(--accentTeal);
+}
+
