@@ -1,3 +1,5 @@
 github icon: Pixel perfect, FlatIcon
 linkedIn icon: riajulislam, FlatIcon
 mail icon: Freepik, FlatIcon
+hamburger icon: bsd, FlatIcon
+down icon: th studio, FlatIcon

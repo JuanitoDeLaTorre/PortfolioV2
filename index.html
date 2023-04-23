@@ -12,35 +12,47 @@
     <header id = "header">
         <a href="#home">
 
-            <svg id = "logo" xmlns="http://www.w3.org/2000/svg" width="498.781" height="297.5" viewBox="0 0 498.781 297.5">
-                <defs>
+            <svg style = "cursor: pointer" id = "logo" xmlns="http://www.w3.org/2000/svg" width="498.781" height="297.5" viewBox="0 0 498.781 297.5">
+                <!-- <defs>
                   <style>
                     .cls-1 {
-                      fill: #e1e1e1;
+                      fill: #8e2626;
                       fill-rule: evenodd;
                     }
                   </style>
-                </defs>
+                </defs> -->
                 <path id="JT.svg" class="cls-1" d="M112.109,314.621c73.334,0,112.5-37.5,112.5-113.334V17.118H42.108V80.868H142.942V206.287c0,27.917-12.916,42.5-36.667,42.5-18.75,0-35-10.417-50.417-30.417l-45,53.334C33.358,299.621,69.608,314.621,112.109,314.621Zm225.833-5.833h82.5V82.535h89.168V17.118H248.358V82.535h89.584V308.788Z" transform="translate(-10.844 -17.125)"/>
               </svg>
         </a>
         
         <ul>
             <a href="#about"><li id = "navElement">About</li></a>
-            <li>/</li>
-            <a href=""><li id = "navElement">Education + skills</li></a>
-            <li>/</li>
-            <a href=""><li id = "navElement">Projects</li></a>
-            <li>/</li>
-            <a href=""><li id = "navElement">Work with me</li></a>
-            <li>/</li>
+            <li style = "color: var(--accentTeal)">/</li>
+            <a href="#education"><li id = "navElement">Education + skills</li></a>
+            <li style = "color: var(--accentTeal)">/</li>
+            <a href="projects"><li id = "navElement">Projects</li></a>
+            <li style = "color: var(--accentTeal)">/</li>
+            <a href="workWithMe"><li id = "navElement">Work with me</li></a>
+            <li style = "color: var(--accentTeal)">/</li>
             <a href="#contact"><li><button id = "contactButton">CONTACT</button></li></a>
         </ul>
+        <div id="menuIcon">
+            <img id = "menuIconHamburger" src="./resources/menuIcon.png" alt="">
+            <div id="subMenu">
+                <ul>
+                    <a href = "#about" ><li>About</li></a>
+                    <a href = "#education" ><li>Education</li></a>
+                    <a href = "#projects" ><li>Projects</li></a>
+                    <a href = "#contact" ><li>Work w/ me</li></a>
+                </ul>
+            </div>
+        </div>
+
     </header>
     <div class="mainContent">
         <div id="home" style = "padding-top: 20vh">
             <!-- left side intro -->
-            <div style = "width: 50%;">
+            <div id = "leftHome" style = "width: 50%;">
                 <h2>Hi, my name is</h2>
                 <h1 style = "font-size: 4.5em; font-weight: 600; margin-top: 0.8rem;">John Thomas</h1>
                 <h2 style = "font-weight: 400;">I'm a full-stack web-developer who loves problem-solving and working with others to find creative and beautiful solutions.</h2>
@@ -51,7 +63,7 @@
                     "WEIRDLY 
                         CAPABLE"
                     </h1>
-                    <h3>- Lead Instructor, General Assembly, 2023</h3>
+                    <h3>- Lead Instructor, General Assembly Bootcamp, 2023</h3>
             </div>
         </div>
 
@@ -72,7 +84,7 @@
         <div class ="about">
             <div id = "aboutText" style="width: 60%;">
                 <p style = "line-height: 2rem;">From my years of studying environmental science and being an award-winning landscape photographer, I’ve learned to appreciate and dive into the details of whatever I’m working on. By getting my Environmental Science master’s degree, I learned to communicate well with people of different skill backgrounds and personalities. I work best in teams and have the ability to draw people together, diffuse conflicts, and encourage productivity towards a common goal. </p>
-                <p style = "line-height: 2rem;">In my free time, I enjoy hiking, travel, and documenting it all through <a href="https://unsplash.com/@capturelight" style = "color: var(--accentTeal)">my photography</a>.</p>
+                <p style = "line-height: 2rem;">In my free time, I enjoy hiking, travel, and documenting it all through <a href="https://unsplash.com/@capturelight" target = "_blank" style = "color: var(--accentTeal)">my photography</a>.</p>
             </div>
             <div id = "profilePicDiv">
                 <img id = "profilePic" src="./resources/profilePic.jpeg" alt="">
@@ -91,9 +103,47 @@
                 </defs>
             </svg>
         </a>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
+        <div id="education">
+            <h2 id = "about" style = "color: var(--accentTeal); padding-top: 15vh">Education + skills</h2>
+            <br><br>
+            <div class="education">
+                <div style = "width: 60%;">
+                    <div class = "institution">
+                        <div style = "display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h3 id = "institutionTitle" style = "margin-bottom: 0; transition: all 300ms ease-in-out;">GENERAL ASSEMBLY</h3>
+                                <h5 style = "color: #5a6692; margin-top: 0; margin-left: 20px">Software Engineering Fellow (2023)</h5>
+                            </div>
+                            <img id = "arrow" src="./resources/down-arrow-colored.png" alt="">
+                        </div>
+                        <h5 class = "institutionDesc">Here I studied engineering, not really!</h5>
+                    </div>
+
+                    <div class = "institution">
+                        <div style = "display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h3 id = "institutionTitle" style = "margin-bottom: 0; transition: all 300ms ease-in-out;">UNIVERSITY OF RHODE ISLAND</h3>
+                                <h5 style = "color: #5a6692; margin-top: 0; margin-left: 20px">M.S., Environmental Science Mgmt. (2022)</h5>
+                            </div>
+                            <img id = "arrow" src="./resources/down-arrow-colored.png" alt="">
+                        </div>
+                        <h5 class = "institutionDesc">Here I studied engineering, not really!</h5>
+                    </div>
+
+                    <div class = "institution">
+                        <div style = "display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h3 id = "institutionTitle" style = "margin-bottom: 0; transition: all 300ms ease-in-out;">BRIGHAM YOUNG UNIVERSITY</h3>
+                                <h5 style = "color: #5a6692; margin-top: 0; margin-left: 20px">B.S., Geospatial Science (2021)</h5>
+                            </div>
+                            <img id = "arrow" src="./resources/down-arrow-colored.png" alt="">
+                        </div>
+                        <h5 class = "institutionDesc">Here I studied engineering, not really!</h5>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
         <!-- SIDE ICONS -->
         <div class="sideIcons">
             <a href="https://github.com/JuanitoDeLaTorre" target="_blank">
@@ -114,11 +164,11 @@
             </a>
             <a href="#contact">
                 <svg id = "mailIcon"
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="32px" height="23px">
-<image  x="0px" y="0px" width="30px" height="23px"  xlink:href="data:img/png;base64,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" />
-</svg>
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32px" height="23px">
+                    <image  x="0px" y="0px" width="30px" height="23px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUYAAADmAgMAAADU0sQ5AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEUAAAAAuqb///+xqpm+AAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAHdElNRQfnBBYRBBLNVlISAAAFLElEQVR42r2c27WjOgxAyVqXEujHJfBB+m/l5uSB9bYky8PXxIO3pJ1ADiBn2/62/VmybX171BCfV0cWEZ/PcyXyqEK2G7lXIZe+PVUyT4A8apANIPcaJCAWyYQqi2SeCHlUIBtC7hVIRCyRiVWWyLxV/lcm86Py8bJYJvMLeqXXimR+Vb54x1kk88d5Ia8imb9q23Y7KFL5yrbja1S+kTUyb8ofskbmXesfskbmDXkjK2T2Ut/ICpmd8UZWyOyVvpEVMjvig5yXCQr9IOdlAsIHOS8T1PlBzssEgC9yViYs84uclQnnf5HPSZkNiMPItMxNQJ5TMi/oDSOzMk8JOScTquzINiMT5XMjZ2QilR15TcjE6dzIGZlYWkdOyMTZdGReJnHWkXmZJJmOzMskygAyLZPkApBZmdQYQGZl0lQAMiuTCoPIpEyaCUTmZDJfEJmTyRKByJxMpgshUzJZHgiZkcltIWRGJk8DITMyuSyMTMjkWWBkXKbgCiPjMoUkMDIuU1BFkGGZQg4EGZUpmSLIqEwpBYKMypREUWRQppQBRcZkip4oMiZTTIAiYzJFTQwZkinGZ8iITNkSQ0ZkyuEZMiJTlsSRAZlydI70y1QccaRfphKcI/0yFUUC0i1TiS0gvTI1QwLSK1MLLSC9MjVBEtIpU4ssIX0yVT8S0idTDSwhfTJVPSLSJVONKyI9MnU7ItIjUw8rIj0ydTky0iFTjyojxzINNzJyLNMIKiPHMg01CnIo04ipIEcyLTMKciTTCqkgRzItMRpyINOKqCFtmaYXDWnLNANqSFumqUVFmrPMeGemtpEV5T/sD7P13qlIqzj7E6YjjXn2caAj9eoGR6uOtL6vzHOKjtTLGxysBlKdOTilnPET2PjEN0Bu7nF34bzAli/8M5PL1MbHyF8XxsM57kB+lQlXnZstc3RAcmnauAP5m0mlaeNjZG9oebjGHchbGbuxtA1kDr4ouDRt3IHsM1GFsMFnjyEvBzL4pQuUoQobHI8hv2c2BcnHHcjvnEYqvND4HkH+ptIT2e81DeVA/k6/tGOg4fEI8s6CfFx+L63mhNGf/w2lc5Lx3Y/sdZ0onUbGAxcpfcIFP9XgRfhSCpQFDz7+78ONBPu3zkEHky5zePGMjkw27r54hrtfjPhgYR1IVBRDovHDiZQ+OH07hLgjJG0dkFQGb+rgnanMhxh4gCQlySpjN8jIvkTmoUS2kLSiS6w7dLOR7SrXHbklygpC77kuyECyPbUvWkWm6yY4eIMONFeU6bpVr/xp5b5VL5XTpCT9DxTE/djbbcj0PpxRJksy3Y+Qzm18UChI9ZwlbaKkf/A4bsFDQ/XEKm6uR5shlb4HsCGVrsfECx5mx1S6HrkHVXoaA4IqHe0LC5osoiodrSBhleOGlbDKYVvNguafuMphi1JC5aiRKqFy0O61oCkto3LQOpdSaTf4pVSabYgLmiVzKs2WzqRKq/E0qdJoj13QxJtVabQap1XqDdFplWrb9oLm8rxKtQV+QqXWqD+hUllOcE6oVBY9zKhUlmZsMyrlBSRTKsVlLnMqxcU4bUqluGRoUqWwsGnB8qtZlYjwQc6qFJayTatkC+4WLAucVwkZb+S8SrbEskAlWQi6YLlqhUpA+UNWqCRLf0tUwgXKC5ZRHzUq4bOgBUvSFyycX7C8fytSye7AL/iphL0ASe7AHxXIhpAVRCxzwU947CXIZ7lKLLOGCGUu+GmZvQj5LFcJZVYRgcwFyBW//LPXID+w/wG/jCNlBXFv+wAAAABJRU5ErkJggg==" />
+                </svg>
             </a>
             <div id="verticalLine"></div>
         </div>
