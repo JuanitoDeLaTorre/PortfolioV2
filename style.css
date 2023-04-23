@@ -31,10 +31,15 @@ header {
     display: flex;
     align-items: center;
     position: fixed;
+    z-index: 1000;
     background-color: var(--headerColor);
     color: var(--mainTextColor);
     justify-content: space-between;
+    transition: box-shadow 500ms ease-in-out;
+    opacity: 1;
+    border-bottom: solid white 1px;
 }
+
 
 a {
     text-decoration: none;
@@ -93,11 +98,58 @@ header ul {
     background: linear-gradient(121deg, rgba(0,145,130,1) 0%, rgba(0,186,166,1) 100%); 
     transition: all 300ms ease-in-out; 
     letter-spacing: 0.1rem;
+    cursor: pointer;
 }
 
 #contactButton:hover {
     border: solid white 1px;
 }
+
+/* SIDE ICONS */
+.sideIcons {
+    position: fixed;
+    left: 5%;
+    bottom: 0%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: all 300ms ease-in-out;
+}
+
+#githubIcon {
+    transition: all 300ms ease-in-out;
+}
+
+#linkedinIcon {
+    transition: all 300ms ease-in-out;
+}
+
+#mailIcon {
+    padding-left: 2px;
+    transition: all 300ms ease-in-out;
+}
+
+
+#githubIcon:hover {
+    transform: scale(105%);
+}
+
+#linkedinIcon:hover {
+    transform: scale(105%);
+}
+
+#mailIcon:hover {
+    transform: scale(105%);
+}
+
+#verticalLine {
+    height: 20vh;
+    width: 1px;
+    background-color: var(--accentTeal);
+}
+
 
 .mainContent {
     margin: 0 15% 0 15%;
@@ -108,7 +160,7 @@ header ul {
     justify-content: space-between;
 }
 
-#about {
+.about {
     display: flex;
     justify-content: space-between;
 }
@@ -139,6 +191,8 @@ header ul {
 
 }
 
+
+
 #backShadow {
     z-index: 0;
     position: absolute;
@@ -148,5 +202,21 @@ header ul {
     left: 20px;
     top: 10px;
     background-color: var(--accentTeal);
+}
+
+@media (width < 600px) {
+    #home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about > #aboutText {
+        width: 80% !important;
+    }
 }
 
