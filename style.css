@@ -123,10 +123,10 @@ header ul {
 
 #subMenu {
     position: absolute;
-    left: -45px;
+    left: -100px;
     top: 57px;
     height: 18vh;
-    width: 20vw;
+    width: 200px;
     background-color: var(--backColor);
     border: solid white 2px;
     color: rgb(213, 213, 213);
@@ -138,6 +138,7 @@ header ul {
 }
 
 #subMenu ul {
+    height: 16vh;
     padding-left: 0px;
     display: flex;
     flex-direction: column;
@@ -288,6 +289,22 @@ header ul {
     .about > #aboutText {
         width: 80% !important;
     }
+
+    .education {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #institutionWrapper {
+        width: 100% !important;
+    }
+
+    .sideImagesEducation {
+        margin-top: 10vh;
+        margin-left: 10%;
+    }
+
+
 }
 
 #arrow {
