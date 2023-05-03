@@ -3,3 +3,4 @@ linkedIn icon: riajulislam, FlatIcon
 mail icon: Freepik, FlatIcon
 hamburger icon: bsd, FlatIcon
 down icon: th studio, FlatIcon
+quotes icon: Icon Mela
