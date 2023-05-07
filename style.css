@@ -73,6 +73,7 @@ header ul {
     transform-origin: 0% 100%;
     opacity: 0.7;
     transition: all 0.3s ease;
+    box-shadow: 0px 0px 15px var(--accentTeal);
 }
 
 #navElement:hover::after {
@@ -82,6 +83,7 @@ header ul {
 
 #navElement:hover {
     color: #a8b4de;
+    box-shadow: 0px 0px 10px white;
 }
 
 #logo {
@@ -267,49 +269,7 @@ header ul {
 
 }
 
-@media (width < 850px) {
-    header > ul {
-        display: none;
-    }
 
-    #leftHome {
-        width: 80% !important;
-    }
-
-    #menuIcon {
-        display: block;
-    }
-
-    #home {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about > #aboutText {
-        width: 80% !important;
-    }
-
-    .education {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #institutionWrapper {
-        width: 100% !important;
-    }
-
-    .sideImagesEducation {
-        margin-top: 10vh;
-        margin-left: 10%;
-    }
-
-
-}
 
 #arrow {
     height:15px;
@@ -325,6 +285,7 @@ header ul {
 .projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 3%;
 }
 
@@ -416,10 +377,11 @@ header ul {
     border-radius: 20px;
     border: solid white 2px;
     /* margin-left: 22%; */
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     background-color: var(--backColor);
     position: relative;
     padding: 3%;
+    transition: all 300ms ease-in-out;
 }
 
 .formContainer::after {
@@ -438,6 +400,10 @@ header ul {
 
 .formContainer:hover::after {
     transform: translate(10px, 10px);
+}
+
+.formContainer:hover {
+    border: solid 1px white;
 }
 
 
@@ -504,5 +470,54 @@ hr {
 
 
 
+@media (width < 850px) {
+    header > ul {
+        display: none;
+    }
 
+    #leftHome {
+        width: 80% !important;
+    }
+
+    #menuIcon {
+        display: block;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about > #aboutText {
+        width: 80% !important;
+    }
+
+    .education {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #institutionWrapper {
+        width: 100% !important;
+    }
+
+    .sideImagesEducation {
+        margin-top: 10vh;
+        margin-left: 10%;
+    }
+
+    #rightForm {
+        display: none;
+    }
+
+    form {
+        width: 100%;
+    }
+
+}
 
