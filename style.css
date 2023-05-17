@@ -534,8 +534,8 @@ hr {
         display: none;
     }
 
-    /* #projectCard > * {
-        transform: scale(50%)
+    /* .projectCard p #projectHighlight {
+        font-size: 0.9em;
     } */
 }
 
