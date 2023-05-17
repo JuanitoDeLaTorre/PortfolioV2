@@ -301,7 +301,7 @@ header ul {
     flex-direction: column;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
     transition: all 300ms ease-in-out;
 }
 
@@ -527,6 +527,16 @@ hr {
         width: 100%;
     }
 
+}
+
+@media (height < 800px) {
+    #skillCard {
+        display: none;
+    }
+
+    /* #projectCard > * {
+        transform: scale(50%)
+    } */
 }
 
 #resume {
