@@ -1,407 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
     <title>John Thomas Portfolio</title>
-</head>
-<body>
-    <header id = "header">
-        <a href="#home">
+  </head>
+  <body>
+    <header id="header">
+      <a href="#home">
+        <svg style="cursor: pointer" id="logo" xmlns="http://www.w3.org/2000/svg" width="498.781" height="297.5" viewBox="0 0 498.781 297.5">
+          <path
+            id="JT.svg"
+            class="cls-1"
+            d="M112.109,314.621c73.334,0,112.5-37.5,112.5-113.334V17.118H42.108V80.868H142.942V206.287c0,27.917-12.916,42.5-36.667,42.5-18.75,0-35-10.417-50.417-30.417l-45,53.334C33.358,299.621,69.608,314.621,112.109,314.621Zm225.833-5.833h82.5V82.535h89.168V17.118H248.358V82.535h89.584V308.788Z"
+            transform="translate(-10.844 -17.125)"
+          />
+        </svg>
+      </a>
 
-            <svg style = "cursor: pointer" id = "logo" xmlns="http://www.w3.org/2000/svg" width="498.781" height="297.5" viewBox="0 0 498.781 297.5">
-                <path id="JT.svg" class="cls-1" d="M112.109,314.621c73.334,0,112.5-37.5,112.5-113.334V17.118H42.108V80.868H142.942V206.287c0,27.917-12.916,42.5-36.667,42.5-18.75,0-35-10.417-50.417-30.417l-45,53.334C33.358,299.621,69.608,314.621,112.109,314.621Zm225.833-5.833h82.5V82.535h89.168V17.118H248.358V82.535h89.584V308.788Z" transform="translate(-10.844 -17.125)"/>
-              </svg>
-        </a>
-        
-        <ul>
-            <a href="#about"><li id = "navElement">About</li></a>
-            <li style = "color: var(--accentTeal)">/</li>
-            <a href="#education"><li id = "navElement">Education + skills</li></a>
-            <li style = "color: var(--accentTeal)">/</li>
-            <a href="#projects"><li id = "navElement">Projects</li></a>
-            <li style = "color: var(--accentTeal)">/</li>
-            <a href="#workWithMe"><li id = "navElement">Work with me</li></a>
-            <li style = "color: var(--accentTeal)">/</li>
-            <a href="#contact"><li><button id = "contactButton">CONTACT</button></li></a>
-        </ul>
-        <div id="menuIcon">
-            <img id = "menuIconHamburger" src="./resources/menuIcon.png" alt="">
-            <div id="subMenu">
-                <ul>
-                    <a href = "#about" ><li>About</li></a>
-                    <a href = "#education" ><li>Education</li></a>
-                    <a href = "#projects" ><li>Projects</li></a>
-                    <a href = "#contact" ><li>Work w/ me</li></a>
-                </ul>
-            </div>
+      <ul>
+        <a href="#about"><li id="navElement">About</li></a>
+        <li style="color: var(--accentTeal)">/</li>
+        <a href="#education"><li id="navElement">Experience + Education</li></a>
+        <li style="color: var(--accentTeal)">/</li>
+        <a href="#projects"><li id="navElement">Projects</li></a>
+        <li style="color: var(--accentTeal)">/</li>
+        <a href="#workWithMe"><li id="navElement">Work with me</li></a>
+        <li style="color: var(--accentTeal)">/</li>
+        <a href="#contact"
+          ><li><button id="contactButton">CONTACT</button></li></a
+        >
+      </ul>
+      <div id="menuIcon">
+        <img id="menuIconHamburger" src="./resources/menuIcon.png" alt="" />
+        <div id="subMenu">
+          <ul>
+            <a href="#about"><li>About</li></a>
+            <a href="#education"><li>Education</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#contact"><li>Work w/ me</li></a>
+          </ul>
         </div>
-
+      </div>
     </header>
     <div class="mainContent">
-        <div id="home" style = "padding-top: 20vh">
-            <!-- left side intro -->
-            <div id = "leftHome" style = "width: 50%;">
-                <h2>Hi! My name is</h2>
-                <h1 style = "font-size: 4.5em; font-weight: 600; margin-top: 0.8rem;">John Thomas</h1>
-                <h2 style = "font-weight: 400;">I'm a full-stack web-developer with a <span style = "color: var(--accentTeal)">rich educational history</span> who loves problem solving and working with others to find <span style = "color: var(--accentTeal)">creative and beautiful solutions</span>.</h2>
+      <div id="home" style="padding-top: 20vh">
+        <!-- left side intro -->
+        <div id="leftHome" style="width: 50%">
+          <h2>Hi! My name is</h2>
+          <h1 style="font-size: 4.5em; font-weight: 600; margin-top: 0.8rem">John Thomas</h1>
+          <h2 style="font-weight: 400">
+            I'm a full-stack web-developer with a <span style="color: var(--accentTeal)">rich educational history</span> who loves problem solving and working with others to find
+            <span style="color: var(--accentTeal)">creative and beautiful solutions</span>.
+          </h2>
+        </div>
+        <!-- right side pull quote -->
+        <div style="width: 45%; text-align: right; padding-top: 3%; color: #263857; font-family: 'Roboto Slab'">
+          <h1 style="font-size: 4em">"WEIRDLY CAPABLE"</h1>
+          <h3>- Lead Instructor, General Assembly Bootcamp, 2023</h3>
+        </div>
+      </div>
+
+      <!-- down button svg -->
+      <a href="#about">
+        <svg id="downButton" width="50" height="50" viewBox="0 0 50 50" fill="#0b2949" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_801_1484)">
+            <path
+              d="M30.8255 26.489L24.5755 32.739M24.5755 32.739L18.3255 26.489M24.5755 32.739L24.5755 16.0723M24.5755 43.1557C14.2202 43.1557 5.8255 34.761 5.8255 24.4057C5.8255 14.0503 14.2202 5.65567 24.5755 5.65567C34.9308 5.65567 43.3255 14.0503 43.3255 24.4057C43.3255 34.761 34.9308 43.1557 24.5755 43.1557ZM1140.06 1858.7L1139.06 1855.88C1138.97 1855.65 1138.67 1855.58 1138.5 1855.76L1134.23 1860.02C1134.14 1860.11 1134.11 1860.25 1134.15 1860.37L1134.82 1862.23C1134.87 1862.36 1134.84 1862.5 1134.74 1862.59L1130.78 1866.54C1130.69 1866.64 1130.54 1866.66 1130.41 1866.62C1130.04 1866.48 1129.63 1866.4 1129.21 1866.4C1128.99 1866.4 1128.77 1866.42 1128.56 1866.46C1127.1 1866.74 1125.96 1867.96 1125.78 1869.42C1125.56 1871.28 1126.73 1872.89 1128.56 1873.22C1130.4 1873.55 1132.23 1872.33 1132.59 1870.49C1132.63 1870.28 1132.65 1870.06 1132.65 1869.84C1132.65 1869.42 1132.57 1869.01 1132.43 1868.64C1132.39 1868.51 1132.41 1868.37 1132.51 1868.27L1136.51 1864.28C1136.6 1864.18 1136.74 1864.15 1136.86 1864.19L1138.61 1864.81C1138.73 1864.86 1138.87 1864.83 1138.96 1864.73L1143.23 1860.47C1143.4 1860.29 1143.33 1859.99 1143.1 1859.91L1140.27 1858.91C1140.18 1858.88 1140.1 1858.8 1140.06 1858.7ZM1129.2 1858.95C1130.27 1858.95 1131.3 1859.11 1132.27 1859.39C1132.42 1859.43 1132.5 1859.59 1132.45 1859.73L1131.86 1861.57C1131.81 1861.71 1131.66 1861.79 1131.51 1861.75C1130.78 1861.54 1130 1861.42 1129.2 1861.42C1124.56 1861.42 1120.8 1865.18 1120.8 1869.8C1120.8 1874.43 1124.56 1878.18 1129.2 1878.18C1133.83 1878.18 1137.59 1874.43 1137.59 1869.8C1137.59 1869.02 1137.49 1868.27 1137.29 1867.55C1137.24 1867.4 1137.32 1867.25 1137.47 1867.2L1139.31 1866.63C1139.45 1866.58 1139.61 1866.66 1139.65 1866.81C1139.92 1867.76 1140.07 1868.76 1140.07 1869.8C1140.07 1875.8 1135.2 1880.66 1129.2 1880.66C1123.19 1880.66 1118.33 1875.8 1118.33 1869.8C1118.33 1863.81 1123.19 1858.95 1129.2 1858.95Z"
+              stroke="#717EAD"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_801_1484">
+              <rect width="50" height="50" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <h2 id="about" style="color: var(--accentTeal); padding-top: 15vh">About</h2>
+      <div class="about">
+        <div id="aboutText" style="width: 60%">
+          <p style="line-height: 2rem; font-size: 1.2em">
+            From my years of studying environmental science and being an award-winning landscape photographer, I’ve learned to appreciate and
+            <span style="color: var(--accentTeal)">dive into the details of whatever I’m working on</span>. By getting my Environmental Science master’s degree, I learned to
+            <span style="color: var(--accentTeal)">communicate well with people of different skill backgrounds</span> and personalities. I work best in teams and have the ability
+            to <span style="color: var(--accentTeal)">draw people together</span>, <span style="color: var(--accentTeal)">diffuse conflicts</span>, and
+            <span style="color: var(--accentTeal)">encourage productivity</span> towards a common goal.
+          </p>
+          <p style="line-height: 2rem; font-size: 1.2em">
+            In my free time, I enjoy hiking, travel, and documenting it all through
+            <a href="https://unsplash.com/@capturelight" target="_blank" style="color: var(--accentTeal); text-decoration: underline">my photography</a>.
+          </p>
+        </div>
+        <div id="profilePicDiv">
+          <img id="profilePic" src="./resources/profilePic.jpeg" alt="" />
+          <div id="backShadow"></div>
+        </div>
+      </div>
+      <a href="#education">
+        <svg id="downButton" width="50" height="50" viewBox="0 0 50 50" fill="#0b2949" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_801_1484)">
+            <path
+              d="M30.8255 26.489L24.5755 32.739M24.5755 32.739L18.3255 26.489M24.5755 32.739L24.5755 16.0723M24.5755 43.1557C14.2202 43.1557 5.8255 34.761 5.8255 24.4057C5.8255 14.0503 14.2202 5.65567 24.5755 5.65567C34.9308 5.65567 43.3255 14.0503 43.3255 24.4057C43.3255 34.761 34.9308 43.1557 24.5755 43.1557ZM1140.06 1858.7L1139.06 1855.88C1138.97 1855.65 1138.67 1855.58 1138.5 1855.76L1134.23 1860.02C1134.14 1860.11 1134.11 1860.25 1134.15 1860.37L1134.82 1862.23C1134.87 1862.36 1134.84 1862.5 1134.74 1862.59L1130.78 1866.54C1130.69 1866.64 1130.54 1866.66 1130.41 1866.62C1130.04 1866.48 1129.63 1866.4 1129.21 1866.4C1128.99 1866.4 1128.77 1866.42 1128.56 1866.46C1127.1 1866.74 1125.96 1867.96 1125.78 1869.42C1125.56 1871.28 1126.73 1872.89 1128.56 1873.22C1130.4 1873.55 1132.23 1872.33 1132.59 1870.49C1132.63 1870.28 1132.65 1870.06 1132.65 1869.84C1132.65 1869.42 1132.57 1869.01 1132.43 1868.64C1132.39 1868.51 1132.41 1868.37 1132.51 1868.27L1136.51 1864.28C1136.6 1864.18 1136.74 1864.15 1136.86 1864.19L1138.61 1864.81C1138.73 1864.86 1138.87 1864.83 1138.96 1864.73L1143.23 1860.47C1143.4 1860.29 1143.33 1859.99 1143.1 1859.91L1140.27 1858.91C1140.18 1858.88 1140.1 1858.8 1140.06 1858.7ZM1129.2 1858.95C1130.27 1858.95 1131.3 1859.11 1132.27 1859.39C1132.42 1859.43 1132.5 1859.59 1132.45 1859.73L1131.86 1861.57C1131.81 1861.71 1131.66 1861.79 1131.51 1861.75C1130.78 1861.54 1130 1861.42 1129.2 1861.42C1124.56 1861.42 1120.8 1865.18 1120.8 1869.8C1120.8 1874.43 1124.56 1878.18 1129.2 1878.18C1133.83 1878.18 1137.59 1874.43 1137.59 1869.8C1137.59 1869.02 1137.49 1868.27 1137.29 1867.55C1137.24 1867.4 1137.32 1867.25 1137.47 1867.2L1139.31 1866.63C1139.45 1866.58 1139.61 1866.66 1139.65 1866.81C1139.92 1867.76 1140.07 1868.76 1140.07 1869.8C1140.07 1875.8 1135.2 1880.66 1129.2 1880.66C1123.19 1880.66 1118.33 1875.8 1118.33 1869.8C1118.33 1863.81 1123.19 1858.95 1129.2 1858.95Z"
+              stroke="#717EAD"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_801_1484">
+              <rect width="50" height="50" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <div id="education">
+        <h2 id="about" style="color: var(--accentTeal); padding-top: 15vh">Experience + Education</h2>
+        <br /><br />
+        <div class="education" style="display: flex; justify-content: space-between">
+          <div id="institutionWrapper" style="width: 60%">
+            <div class="institution">
+              <div style="display: flex; justify-content: space-between; align-items: center">
+                <div>
+                  <h3 id="institutionTitle" style="margin-bottom: 0; transition: all 300ms ease-in-out">HARVARD UNIVERSITY</h3>
+                  <h5 style="color: #5a6692; margin-top: 0; margin-left: 20px">Full Stack Web Developer (2024)</h5>
+                </div>
+                <img id="arrow" src="./resources/down-arrow-colored.png" alt="" />
+              </div>
+              <h5 class="institutionDesc" style="font-size: 1.1em">
+                In my role at Harvard in the Atmospheric Chemistry Modeling Group, I <span style="color: var(--accentTeal)">developed a web-based platform</span> in
+                <span style="text-decoration: underline">React</span> and <span style="text-decoration: underline">Django</span> to significantly simplify the process of
+                quantifying methane emissions. I manage <span style="color: var(--accentTeal)">all parts of the development process</span>, from project management, to design, to
+                backend AWS architecture.
+                <br />
+                <br />
+                I have also managed testing and the <span style="color: var(--accentTeal)">integration of beta users</span> from instutions around the world from prestigious
+                organizations such as Exxon, the EPA, and Bloomberg.
+              </h5>
             </div>
-            <!-- right side pull quote -->
-            <div style = "width: 45%; text-align: right; padding-top: 3%; color: #263857; font-family: 'Roboto Slab';">
-                    <h1 style = "font-size: 4em; ">
-                    "WEIRDLY 
-                        CAPABLE"
-                    </h1>
-                    <h3>- Lead Instructor, General Assembly Bootcamp, 2023</h3>
+            <div class="institution">
+              <div style="display: flex; justify-content: space-between; align-items: center">
+                <div>
+                  <h3 id="institutionTitle" style="margin-bottom: 0; transition: all 300ms ease-in-out">GENERAL ASSEMBLY</h3>
+                  <h5 style="color: #5a6692; margin-top: 0; margin-left: 20px">Software Engineering Fellow (2023)</h5>
+                </div>
+                <img id="arrow" src="./resources/down-arrow-colored.png" alt="" />
+              </div>
+              <h5 class="institutionDesc" style="font-size: 1.1em">
+                Though completely new to web development, I excelled in all topics, winning the cohort Hackathon and producing
+                <a href="#projects" style="text-decoration: underline; color: var(--accentTeal)">high-quality group projects</a> using
+                <span style="color: var(--accentTeal)">React</span>, <span style="color: var(--accentTeal)">Express</span>, and
+                <span style="color: var(--accentTeal)">Django</span>.
+              </h5>
             </div>
+
+            <div class="institution">
+              <div style="display: flex; justify-content: space-between; align-items: center">
+                <div>
+                  <h3 id="institutionTitle" style="margin-bottom: 0; transition: all 300ms ease-in-out">UNIVERSITY OF RHODE ISLAND</h3>
+                  <h5 style="color: #5a6692; margin-top: 0; margin-left: 20px">M.S., Environmental Science Mgmt. (2022)</h5>
+                </div>
+                <img id="arrow" src="./resources/down-arrow-colored.png" alt="" />
+              </div>
+              <h5 class="institutionDesc" style="font-size: 1.1em">
+                At URI, I learned to <span style="color: var(--accentTeal)">communicate complex information</span> with people from
+                <span style="color: var(--accentTeal)">many different fields</span>, through written and visual methods.
+              </h5>
+            </div>
+
+            <div class="institution">
+              <div style="display: flex; justify-content: space-between; align-items: center">
+                <div>
+                  <h3 id="institutionTitle" style="margin-bottom: 0; transition: all 300ms ease-in-out">BRIGHAM YOUNG UNIVERSITY</h3>
+                  <h5 style="color: #5a6692; margin-top: 0; margin-left: 20px">B.S., Geospatial Science (2021)</h5>
+                </div>
+                <img id="arrow" src="./resources/down-arrow-colored.png" alt="" />
+              </div>
+              <h5 class="institutionDesc" style="font-size: 1.1em">
+                At BYU, I was first exposed to <span style="color: var(--accentTeal)">problem-solving through code</span> with languages like
+                <span style="color: var(--accentTeal)">C++ and Python</span>. I also learned to quickly become
+                <span style="color: var(--accentTeal)">comfortable using new technologies</span> and new data streams.
+              </h5>
+            </div>
+          </div>
+          <div class="sideImagesEducation" style="width: 38%; height: 30vh; position: relative">
+            <img style="height: 150px; width: auto; position: absolute; left: 25%; top: -45%" src="./resources/Harvard_University_shield.png" alt="" />
+            <img style="height: 140px; width: auto; position: absolute; left: 55%; top: -10%" src="./resources/general_assembly.png" alt="" />
+            <img style="height: 140px; width: auto; position: absolute; left: 30%; top: 15%" src="./resources/Rhode_Island_Rams_logo.svg.png" alt="" />
+            <img style="height: 120px; width: auto; position: absolute; left: 55%; bottom: 5%" src="./resources/BYU_Cougars_logo.svg.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <a href="#projects">
+        <svg id="downButton" width="50" height="50" viewBox="0 0 50 50" fill="#0b2949" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_801_1484)">
+            <path
+              d="M30.8255 26.489L24.5755 32.739M24.5755 32.739L18.3255 26.489M24.5755 32.739L24.5755 16.0723M24.5755 43.1557C14.2202 43.1557 5.8255 34.761 5.8255 24.4057C5.8255 14.0503 14.2202 5.65567 24.5755 5.65567C34.9308 5.65567 43.3255 14.0503 43.3255 24.4057C43.3255 34.761 34.9308 43.1557 24.5755 43.1557ZM1140.06 1858.7L1139.06 1855.88C1138.97 1855.65 1138.67 1855.58 1138.5 1855.76L1134.23 1860.02C1134.14 1860.11 1134.11 1860.25 1134.15 1860.37L1134.82 1862.23C1134.87 1862.36 1134.84 1862.5 1134.74 1862.59L1130.78 1866.54C1130.69 1866.64 1130.54 1866.66 1130.41 1866.62C1130.04 1866.48 1129.63 1866.4 1129.21 1866.4C1128.99 1866.4 1128.77 1866.42 1128.56 1866.46C1127.1 1866.74 1125.96 1867.96 1125.78 1869.42C1125.56 1871.28 1126.73 1872.89 1128.56 1873.22C1130.4 1873.55 1132.23 1872.33 1132.59 1870.49C1132.63 1870.28 1132.65 1870.06 1132.65 1869.84C1132.65 1869.42 1132.57 1869.01 1132.43 1868.64C1132.39 1868.51 1132.41 1868.37 1132.51 1868.27L1136.51 1864.28C1136.6 1864.18 1136.74 1864.15 1136.86 1864.19L1138.61 1864.81C1138.73 1864.86 1138.87 1864.83 1138.96 1864.73L1143.23 1860.47C1143.4 1860.29 1143.33 1859.99 1143.1 1859.91L1140.27 1858.91C1140.18 1858.88 1140.1 1858.8 1140.06 1858.7ZM1129.2 1858.95C1130.27 1858.95 1131.3 1859.11 1132.27 1859.39C1132.42 1859.43 1132.5 1859.59 1132.45 1859.73L1131.86 1861.57C1131.81 1861.71 1131.66 1861.79 1131.51 1861.75C1130.78 1861.54 1130 1861.42 1129.2 1861.42C1124.56 1861.42 1120.8 1865.18 1120.8 1869.8C1120.8 1874.43 1124.56 1878.18 1129.2 1878.18C1133.83 1878.18 1137.59 1874.43 1137.59 1869.8C1137.59 1869.02 1137.49 1868.27 1137.29 1867.55C1137.24 1867.4 1137.32 1867.25 1137.47 1867.2L1139.31 1866.63C1139.45 1866.58 1139.61 1866.66 1139.65 1866.81C1139.92 1867.76 1140.07 1868.76 1140.07 1869.8C1140.07 1875.8 1135.2 1880.66 1129.2 1880.66C1123.19 1880.66 1118.33 1875.8 1118.33 1869.8C1118.33 1863.81 1123.19 1858.95 1129.2 1858.95Z"
+              stroke="#717EAD"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_801_1484">
+              <rect width="50" height="50" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <h2 id="projects" style="color: var(--accentTeal); padding-top: 15vh">Projects</h2>
+      <div class="projects">
+        <div class="projectCard">
+          <div style="height: 30%; width: auto; border: solid var(--mainTextColor) 1px">
+            <img style="height: 100%; width: auto; object-fit: cover" src="./resources/logo_light_large.png" />
+          </div>
+          <div style="height: 70%; text-align: center">
+            <!-- <h3>Integral Earth</h3> -->
+            <div style="height: 70%; overflow: scroll">
+              <p style="text-align: left; font-size: 0.9rem">
+                <span id="projectHighlight"></span>
+                <span id="projectHighlight">Integral Earth</span> is a web-based platform designed to make methane emissions data
+                <span id="projectHighlight">accessible and actionable for a wide range of users</span>, from policymakers to environmental researchers. Built on the advanced
+                capabilities of the <a href="https://integratedmethaneinversion.github.io/" id="projectHighlight" target="#">Integrated Methane Inversion (IMI)</a>, which
+                quantifies regional methane emissions. The platform <span id="projectHighlight">simplifies complex workflows</span>, allowing users to customize regions,
+                timeframes, and settings, and to run emissions inversions <span id="projectHighlight">without technical expertise</span>.
+                <br />
+                <br />
+                This project has allowed me to grow in many professional and technical aspects.
+                <span id="projectHighlight"
+                  >As the lead developer, I manage all aspects of the project, learned data visualization tools, and contributed to high-level discussions about the future of the
+                  project</span
+                >.
+              </p>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 3%">
+              <div id="skillCard">React</div>
+              <div id="skillCard">Django</div>
+              <div id="skillCard">Data Viz</div>
+              <div id="skillCard">Project Management</div>
+              <div id="skillCard">AWS</div>
+            </div>
+            <hr />
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 5%; gap: 5%">
+              <a href="https://code-hive.herokuapp.com/"><button id="contactButton">Live Site</button></a>
+              <a href="https://github.com/JuanitoDeLaTorre/CodeHive"><button id="contactButton">GH Repo</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="projectCard">
+          <div style="height: 30%; width: auto; border: solid var(--mainTextColor) 1px">
+            <img style="height: 100%; width: auto; object-fit: cover" src="./resources/code-hive.png" />
+          </div>
+          <div style="height: 70%; text-align: center">
+            <h3>Code Hive</h3>
+            <p style="text-align: left">
+              Code Hive solves a common issue facing developers: saving and <span id="projectHighlight">categorize highly useful or often used code-snippets</span> for future use.
+              This app utilizes the <span id="projectHighlight">full MERN stack</span> and has a user-friendly UI, in-browser code highlighting, and a community feature.
+              <span id="projectHighlight">I was able to show leadership by delegating responsbilities and leading our stand ups</span>.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 3%">
+              <div id="skillCard">React</div>
+              <div id="skillCard">Express</div>
+              <div id="skillCard">MongoDB</div>
+              <div id="skillCard">Javascript</div>
+              <div id="skillCard">Teamwork</div>
+            </div>
+            <hr />
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 5%; gap: 5%">
+              <a href="https://code-hive.herokuapp.com/"><button id="contactButton">Live Site</button></a>
+              <a href="https://github.com/JuanitoDeLaTorre/CodeHive"><button id="contactButton">GH Repo</button></a>
+            </div>
+          </div>
         </div>
 
-        <!-- down button svg -->
-        <a href="#about" >
-            <svg id = "downButton" width="50" height="50" viewBox="0 0 50 50" fill="#0b2949" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_801_1484)">
-                <path d="M30.8255 26.489L24.5755 32.739M24.5755 32.739L18.3255 26.489M24.5755 32.739L24.5755 16.0723M24.5755 43.1557C14.2202 43.1557 5.8255 34.761 5.8255 24.4057C5.8255 14.0503 14.2202 5.65567 24.5755 5.65567C34.9308 5.65567 43.3255 14.0503 43.3255 24.4057C43.3255 34.761 34.9308 43.1557 24.5755 43.1557ZM1140.06 1858.7L1139.06 1855.88C1138.97 1855.65 1138.67 1855.58 1138.5 1855.76L1134.23 1860.02C1134.14 1860.11 1134.11 1860.25 1134.15 1860.37L1134.82 1862.23C1134.87 1862.36 1134.84 1862.5 1134.74 1862.59L1130.78 1866.54C1130.69 1866.64 1130.54 1866.66 1130.41 1866.62C1130.04 1866.48 1129.63 1866.4 1129.21 1866.4C1128.99 1866.4 1128.77 1866.42 1128.56 1866.46C1127.1 1866.74 1125.96 1867.96 1125.78 1869.42C1125.56 1871.28 1126.73 1872.89 1128.56 1873.22C1130.4 1873.55 1132.23 1872.33 1132.59 1870.49C1132.63 1870.28 1132.65 1870.06 1132.65 1869.84C1132.65 1869.42 1132.57 1869.01 1132.43 1868.64C1132.39 1868.51 1132.41 1868.37 1132.51 1868.27L1136.51 1864.28C1136.6 1864.18 1136.74 1864.15 1136.86 1864.19L1138.61 1864.81C1138.73 1864.86 1138.87 1864.83 1138.96 1864.73L1143.23 1860.47C1143.4 1860.29 1143.33 1859.99 1143.1 1859.91L1140.27 1858.91C1140.18 1858.88 1140.1 1858.8 1140.06 1858.7ZM1129.2 1858.95C1130.27 1858.95 1131.3 1859.11 1132.27 1859.39C1132.42 1859.43 1132.5 1859.59 1132.45 1859.73L1131.86 1861.57C1131.81 1861.71 1131.66 1861.79 1131.51 1861.75C1130.78 1861.54 1130 1861.42 1129.2 1861.42C1124.56 1861.42 1120.8 1865.18 1120.8 1869.8C1120.8 1874.43 1124.56 1878.18 1129.2 1878.18C1133.83 1878.18 1137.59 1874.43 1137.59 1869.8C1137.59 1869.02 1137.49 1868.27 1137.29 1867.55C1137.24 1867.4 1137.32 1867.25 1137.47 1867.2L1139.31 1866.63C1139.45 1866.58 1139.61 1866.66 1139.65 1866.81C1139.92 1867.76 1140.07 1868.76 1140.07 1869.8C1140.07 1875.8 1135.2 1880.66 1129.2 1880.66C1123.19 1880.66 1118.33 1875.8 1118.33 1869.8C1118.33 1863.81 1123.19 1858.95 1129.2 1858.95Z" stroke="#717EAD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_801_1484">
-                <rect width="50" height="50" fill="white"/>
-                </clipPath>
-                </defs>
-            </svg>
-        </a>
-        <h2 id = "about" style = "color: var(--accentTeal); padding-top: 15vh">About</h2>
-        <div class ="about">
-            <div id = "aboutText" style="width: 60%;">
-                <p style = "line-height: 2rem; font-size: 1.2em;">From my years of studying environmental science and being an award-winning landscape photographer, I’ve learned to appreciate and <span style = "color: var(--accentTeal);">dive into the details of whatever I’m working on</span>. By getting my Environmental Science master’s degree, I learned to <span style = "color: var(--accentTeal);">communicate well with people of different skill backgrounds</span> and personalities. I work best in teams and have the ability to <span style = "color: var(--accentTeal);">draw people together</span>, <span style = "color: var(--accentTeal);">diffuse conflicts</span>, and <span style = "color: var(--accentTeal);">encourage productivity</span> towards a common goal. </p>
-                <p style = "line-height: 2rem; font-size: 1.2em;">In my free time, I enjoy hiking, travel, and documenting it all through <a href="https://unsplash.com/@capturelight" target = "_blank" style = "color: var(--accentTeal); text-decoration: underline;">my photography</a>.</p>
+        <div class="projectCard">
+          <div style="height: 30%; width: auto; border: solid var(--mainTextColor) 1px">
+            <img style="height: 100%; width: auto; object-fit: cover" src="./resources/LucyMeals.png" />
+          </div>
+          <div style="height: 70%; text-align: center">
+            <h3>Lucy Meals</h3>
+            <p style="text-align: left; font-size: 0.95em">
+              Lucy Meals is an app that lets you upload and organize recipes. Additionally, it helps plan stores required to shop at to complete said recipes. Django proved to be a
+              particularly challenging framework for me to learn, especially with the <span id="projectHighlight">introduction of PostgreSQL</span>, but I tackled it head on. This
+              project once again <span id="projectHighlight">found me taking leadership roles</span> with running daily standups and
+              <span id="projectHighlight">organizing the project board</span>.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 3%">
+              <div id="skillCard">Python</div>
+              <div id="skillCard">Django</div>
+              <div id="skillCard">PostgreSQL</div>
+              <div id="skillCard">Ajax</div>
             </div>
-            <div id = "profilePicDiv">
-                <img id = "profilePic" src="./resources/profilePic.jpeg" alt="">
-                <div id="backShadow"></div>
+            <hr />
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 5%; gap: 5%">
+              <a href="https://lucy-meals.herokuapp.com/"><button id="contactButton">Live Site</button></a>
+              <a href="https://github.com/JuanitoDeLaTorre/Lucy_Meals"><button id="contactButton">GH Repo</button></a>
             </div>
+          </div>
         </div>
-        <a href="#education">
-            <svg id = "downButton" width="50" height="50" viewBox="0 0 50 50" fill="#0b2949" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_801_1484)">
-                <path d="M30.8255 26.489L24.5755 32.739M24.5755 32.739L18.3255 26.489M24.5755 32.739L24.5755 16.0723M24.5755 43.1557C14.2202 43.1557 5.8255 34.761 5.8255 24.4057C5.8255 14.0503 14.2202 5.65567 24.5755 5.65567C34.9308 5.65567 43.3255 14.0503 43.3255 24.4057C43.3255 34.761 34.9308 43.1557 24.5755 43.1557ZM1140.06 1858.7L1139.06 1855.88C1138.97 1855.65 1138.67 1855.58 1138.5 1855.76L1134.23 1860.02C1134.14 1860.11 1134.11 1860.25 1134.15 1860.37L1134.82 1862.23C1134.87 1862.36 1134.84 1862.5 1134.74 1862.59L1130.78 1866.54C1130.69 1866.64 1130.54 1866.66 1130.41 1866.62C1130.04 1866.48 1129.63 1866.4 1129.21 1866.4C1128.99 1866.4 1128.77 1866.42 1128.56 1866.46C1127.1 1866.74 1125.96 1867.96 1125.78 1869.42C1125.56 1871.28 1126.73 1872.89 1128.56 1873.22C1130.4 1873.55 1132.23 1872.33 1132.59 1870.49C1132.63 1870.28 1132.65 1870.06 1132.65 1869.84C1132.65 1869.42 1132.57 1869.01 1132.43 1868.64C1132.39 1868.51 1132.41 1868.37 1132.51 1868.27L1136.51 1864.28C1136.6 1864.18 1136.74 1864.15 1136.86 1864.19L1138.61 1864.81C1138.73 1864.86 1138.87 1864.83 1138.96 1864.73L1143.23 1860.47C1143.4 1860.29 1143.33 1859.99 1143.1 1859.91L1140.27 1858.91C1140.18 1858.88 1140.1 1858.8 1140.06 1858.7ZM1129.2 1858.95C1130.27 1858.95 1131.3 1859.11 1132.27 1859.39C1132.42 1859.43 1132.5 1859.59 1132.45 1859.73L1131.86 1861.57C1131.81 1861.71 1131.66 1861.79 1131.51 1861.75C1130.78 1861.54 1130 1861.42 1129.2 1861.42C1124.56 1861.42 1120.8 1865.18 1120.8 1869.8C1120.8 1874.43 1124.56 1878.18 1129.2 1878.18C1133.83 1878.18 1137.59 1874.43 1137.59 1869.8C1137.59 1869.02 1137.49 1868.27 1137.29 1867.55C1137.24 1867.4 1137.32 1867.25 1137.47 1867.2L1139.31 1866.63C1139.45 1866.58 1139.61 1866.66 1139.65 1866.81C1139.92 1867.76 1140.07 1868.76 1140.07 1869.8C1140.07 1875.8 1135.2 1880.66 1129.2 1880.66C1123.19 1880.66 1118.33 1875.8 1118.33 1869.8C1118.33 1863.81 1123.19 1858.95 1129.2 1858.95Z" stroke="#717EAD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_801_1484">
-                <rect width="50" height="50" fill="white"/>
-                </clipPath>
-                </defs>
-            </svg>
-        </a>
-        <div id="education">
-            <h2 id = "about" style = "color: var(--accentTeal); padding-top: 15vh">Education + skills</h2>
-            <br><br>
-            <div class="education" style = "display: flex; justify-content: space-between;">
-                <div id = "institutionWrapper" style = "width: 60%;">
-                    <div class = "institution">
-                        <div style = "display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <h3 id = "institutionTitle" style = "margin-bottom: 0; transition: all 300ms ease-in-out;">GENERAL ASSEMBLY</h3>
-                                <h5 style = "color: #5a6692; margin-top: 0; margin-left: 20px">Software Engineering Fellow (2023)</h5>
-                            </div>
-                            <img id = "arrow" src="./resources/down-arrow-colored.png" alt="">
-                        </div>
-                        <h5 class = "institutionDesc" style = "font-size: 1.1em">Though completely new to web development, I excelled in all topics, winning the cohort Hackathon and producing <a href = "#projects" style = "text-decoration: underline; color: var(--accentTeal)">high-quality group projects</a> using <span style = "color: var(--accentTeal)">React</span>, <span style = "color: var(--accentTeal)">Express</span>, and <span style = "color: var(--accentTeal)">Django</span>.</h5>
-                        
-                    </div>
-                    
-                    <div class = "institution">
-                        <div style = "display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <h3 id = "institutionTitle" style = "margin-bottom: 0; transition: all 300ms ease-in-out;">UNIVERSITY OF RHODE ISLAND</h3>
-                                <h5 style = "color: #5a6692; margin-top: 0; margin-left: 20px">M.S., Environmental Science Mgmt. (2022)</h5>
-                            </div>
-                            <img id = "arrow" src="./resources/down-arrow-colored.png" alt="">
-                        </div>
-                        <h5 class = "institutionDesc" style = "font-size: 1.1em">At URI, I learned to <span style = "color: var(--accentTeal)">communicate complex information</span> with people from <span style = "color: var(--accentTeal)">many different fields</span>, through written and visual methods.</h5>
-                    </div>
 
-                    <div class = "institution">
-                        <div style = "display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <h3 id = "institutionTitle" style = "margin-bottom: 0; transition: all 300ms ease-in-out;">BRIGHAM YOUNG UNIVERSITY</h3>
-                                <h5 style = "color: #5a6692; margin-top: 0; margin-left: 20px">B.S., Geospatial Science (2021)</h5>
-                            </div>
-                            <img id = "arrow" src="./resources/down-arrow-colored.png" alt="">
-                        </div>
-                        <h5 class = "institutionDesc" style = "font-size: 1.1em">At BYU, I was first exposed to <span style = "color: var(--accentTeal)">problem-solving through code</span> with languages like <span style = "color: var(--accentTeal)">C++ and Python</span>. I also learned to quickly become <span style = "color: var(--accentTeal)">comfortable using new technologies</span> and new data streams.</h5>
-                    </div>
-                    
-                </div>
-                <div class="sideImagesEducation" style = "width: 38%; height: 30vh; position: relative;">
-                    <img style = "height: 140px; width: auto; position: absolute; left: 50%; top: -20%" src="./resources/general_assembly.png" alt="">
-                    <img style = "height: 140px; width: auto; position: absolute; left: 30%" src="./resources/Rhode_Island_Rams_logo.svg.png" alt="">
-                    <img style = "height: 120px; width: auto; position: absolute; left: 45%; bottom: 15%" src="./resources/BYU_Cougars_logo.svg.png" alt="">
-                </div>
+        <div class="projectCard">
+          <div style="height: 30%; width: auto; border: solid var(--mainTextColor) 1px">
+            <img style="height: 100%; width: auto; object-fit: cover" src="./resources/generate.png" />
+          </div>
+          <div style="height: 70%; text-align: center">
+            <h3>Generate Social Media</h3>
+            <p style="text-align: left">
+              Generate was the <span id="projectHighlight">first major group project</span> I worked on, which presented
+              <span id="projectHighlight">new challenges like authentication</span> and opportunities to improve my teambuilding and communication. This project shows my ability to
+              create apps that <span id="projectHighlight">store complex user data</span> in an external database while still
+              <span id="projectHighlight">providing a rich UI</span>.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 3%">
+              <div id="skillCard">Express</div>
+              <div id="skillCard">Auth</div>
+              <div id="skillCard">MongoDB</div>
+              <div id="skillCard">SCRUM</div>
+              <div id="skillCard">Leadership</div>
             </div>
+            <hr />
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 5%; gap: 5%">
+              <a href="https://generate-social.onrender.com/"><button id="contactButton">Live Site</button></a>
+              <a href="https://github.com/JuanitoDeLaTorre/Generate_Social_Media"><button id="contactButton">GH Repo</button></a>
+            </div>
+          </div>
         </div>
-        <a href="#projects" >
-            <svg id = "downButton" width="50" height="50" viewBox="0 0 50 50" fill="#0b2949" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_801_1484)">
-                <path d="M30.8255 26.489L24.5755 32.739M24.5755 32.739L18.3255 26.489M24.5755 32.739L24.5755 16.0723M24.5755 43.1557C14.2202 43.1557 5.8255 34.761 5.8255 24.4057C5.8255 14.0503 14.2202 5.65567 24.5755 5.65567C34.9308 5.65567 43.3255 14.0503 43.3255 24.4057C43.3255 34.761 34.9308 43.1557 24.5755 43.1557ZM1140.06 1858.7L1139.06 1855.88C1138.97 1855.65 1138.67 1855.58 1138.5 1855.76L1134.23 1860.02C1134.14 1860.11 1134.11 1860.25 1134.15 1860.37L1134.82 1862.23C1134.87 1862.36 1134.84 1862.5 1134.74 1862.59L1130.78 1866.54C1130.69 1866.64 1130.54 1866.66 1130.41 1866.62C1130.04 1866.48 1129.63 1866.4 1129.21 1866.4C1128.99 1866.4 1128.77 1866.42 1128.56 1866.46C1127.1 1866.74 1125.96 1867.96 1125.78 1869.42C1125.56 1871.28 1126.73 1872.89 1128.56 1873.22C1130.4 1873.55 1132.23 1872.33 1132.59 1870.49C1132.63 1870.28 1132.65 1870.06 1132.65 1869.84C1132.65 1869.42 1132.57 1869.01 1132.43 1868.64C1132.39 1868.51 1132.41 1868.37 1132.51 1868.27L1136.51 1864.28C1136.6 1864.18 1136.74 1864.15 1136.86 1864.19L1138.61 1864.81C1138.73 1864.86 1138.87 1864.83 1138.96 1864.73L1143.23 1860.47C1143.4 1860.29 1143.33 1859.99 1143.1 1859.91L1140.27 1858.91C1140.18 1858.88 1140.1 1858.8 1140.06 1858.7ZM1129.2 1858.95C1130.27 1858.95 1131.3 1859.11 1132.27 1859.39C1132.42 1859.43 1132.5 1859.59 1132.45 1859.73L1131.86 1861.57C1131.81 1861.71 1131.66 1861.79 1131.51 1861.75C1130.78 1861.54 1130 1861.42 1129.2 1861.42C1124.56 1861.42 1120.8 1865.18 1120.8 1869.8C1120.8 1874.43 1124.56 1878.18 1129.2 1878.18C1133.83 1878.18 1137.59 1874.43 1137.59 1869.8C1137.59 1869.02 1137.49 1868.27 1137.29 1867.55C1137.24 1867.4 1137.32 1867.25 1137.47 1867.2L1139.31 1866.63C1139.45 1866.58 1139.61 1866.66 1139.65 1866.81C1139.92 1867.76 1140.07 1868.76 1140.07 1869.8C1140.07 1875.8 1135.2 1880.66 1129.2 1880.66C1123.19 1880.66 1118.33 1875.8 1118.33 1869.8C1118.33 1863.81 1123.19 1858.95 1129.2 1858.95Z" stroke="#717EAD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_801_1484">
-                <rect width="50" height="50" fill="white"/>
-                </clipPath>
-                </defs>
-            </svg>
-        </a>
-        <h2 id = "projects" style = "color: var(--accentTeal); padding-top: 15vh">Projects</h2>
-        <div class="projects">
 
-            <div class="projectCard">
-                <div style = "height: 30%; width: auto; border: solid var(--mainTextColor) 1px;">
-                    <img style = "height: 100%; width: auto; object-fit: cover;" src = "./resources/code-hive.png">
-                </div>
-                <div style = "height: 70%; text-align: center;">
-                    <h3>Code Hive</h3>
-                    <p style = "text-align: left;">Code Hive solves a common issue facing developers: saving and <span id = "projectHighlight">categorize highly useful or often used code-snippets</span> for future use. This app utilizes the <span id = "projectHighlight">full MERN stack</span> and has a user-friendly UI, in-browser code highlighting, and a community feature. <span id = "projectHighlight">I was able to show leadership by delegating responsbilities and leading our stand ups</span>.</p>
-                    <div style = "display: flex; flex-wrap: wrap; gap: 3%">
-                        <div id="skillCard">React</div>
-                        <div id="skillCard">Express</div>
-                        <div id="skillCard">MongoDB</div>
-                        <div id="skillCard">Javascript</div>
-                        <div id="skillCard">Teamwork</div>
-                    </div>
-                    <hr>
-                    <div style = "display: flex; justify-content: center; align-items: center; margin-top: 5%; gap : 5%">
-                        <a href = "https://code-hive.herokuapp.com/"><button id = "contactButton">Live Site</button></a>
-                        <a href = "https://github.com/JuanitoDeLaTorre/CodeHive"><button id = "contactButton">GH Repo</button></a>
-                    </div>
-                </div>
+        <div class="projectCard">
+          <div style="height: 30%; width: auto; border: solid var(--mainTextColor) 1px">
+            <img style="height: 100%; width: auto; object-fit: cover" src="./resources/spaceship.png" />
+          </div>
+          <div style="height: 70%; text-align: center">
+            <h3>Space Battle</h3>
+            <p style="text-align: left">
+              This was the <span id="projectHighlight">first project</span> I did for the bootcamp. From the beginning of my dive into coding, I showed that I had a talent for
+              creating <span id="projectHighlight">visually rich</span> and <span id="projectHighlight">logically complex</span> products, even with the limited instruction I had
+              been given at that time.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 3%">
+              <div id="skillCard">HTML</div>
+              <div id="skillCard">Javascript</div>
+              <div id="skillCard">CSS</div>
+              <div id="skillCard">Design</div>
+              <div id="skillCard">Creativity</div>
             </div>
-
-            <div class="projectCard">
-                <div style = "height: 30%; width: auto; border: solid var(--mainTextColor) 1px;">
-                    <img style = "height: 100%; width: auto; object-fit: cover;" src = "./resources/LucyMeals.png">
-                </div>
-                <div style = "height: 70%; text-align: center;">
-                    <h3>Lucy Meals</h3>
-                    <p style = "text-align: left; font-size: 0.95em;">Lucy Meals is an app that lets you upload and organize recipes. Additionally, it helps plan stores required to shop at to complete said recipes. Django proved to be a particularly challenging framework for me to learn, especially with the <span id = "projectHighlight">introduction of PostgreSQL</span>, but I tackled it head on. This project once again <span id = "projectHighlight">found me taking leadership roles</span> with running daily standups and <span id = "projectHighlight">organizing the project board</span>.</p>
-                    <div style = "display: flex; flex-wrap: wrap; gap: 3%">
-                        <div id="skillCard">Python</div>
-                        <div id="skillCard">Django</div>
-                        <div id="skillCard">PostgreSQL</div>
-                        <div id="skillCard">Ajax</div>
-                    </div>
-                    <hr>
-                    <div style = "display: flex; justify-content: center; align-items: center; margin-top: 5%; gap : 5%">
-                        <a href = "https://lucy-meals.herokuapp.com/"><button id = "contactButton">Live Site</button></a>
-                        <a href = "https://github.com/JuanitoDeLaTorre/Lucy_Meals"><button id = "contactButton">GH Repo</button></a>
-                    </div>
-                </div>
+            <hr />
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 5%; gap: 5%">
+              <a href="https://juanitodelatorre.github.io/SpaceBattle/"><button id="contactButton">Live Site</button></a>
+              <a href="https://github.com/JuanitoDeLaTorre/SpaceBattle"><button id="contactButton">GH Repo</button></a>
             </div>
-
-            <div class="projectCard">
-                <div style = "height: 30%; width: auto; border: solid var(--mainTextColor) 1px;">
-                    <img style = "height: 100%; width: auto; object-fit: cover;" src = "./resources/generate.png">
-                </div>
-                <div style = "height: 70%; text-align: center;">
-                    <h3>Generate Social Media</h3>
-                    <p style = "text-align: left;">Generate was the <span id = "projectHighlight">first major group project</span> I worked on, which presented <span id = "projectHighlight">new challenges like authentication</span> and opportunities to improve my teambuilding and communication. This project shows my ability to create apps that <span id = "projectHighlight">store complex user data</span> in an external database while still <span id = "projectHighlight">providing a rich UI</span>.</p>
-                    <div style = "display: flex; flex-wrap: wrap; gap: 3%">
-                        <div id="skillCard">Express</div>
-                        <div id="skillCard">Auth</div>
-                        <div id="skillCard">MongoDB</div>
-                        <div id="skillCard">SCRUM</div>
-                        <div id="skillCard">Leadership</div>
-                    </div>
-                    <hr>
-                    <div style = "display: flex; justify-content: center; align-items: center; margin-top: 5%; gap : 5%">
-                        <a href = "https://generate-social.onrender.com/"><button id = "contactButton">Live Site</button></a>
-                        <a href = "https://github.com/JuanitoDeLaTorre/Generate_Social_Media"><button id = "contactButton">GH Repo</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projectCard">
-                <div style = "height: 30%; width: auto; border: solid var(--mainTextColor) 1px;">
-                    <img style = "height: 100%; width: auto; object-fit: cover;" src = "./resources/spaceship.png">
-                </div>
-                <div style = "height: 70%; text-align: center;">
-                    <h3>Space Battle</h3>
-                    <p style = "text-align: left;">This was the <span id = "projectHighlight">first project</span> I did for the bootcamp. From the beginning of my dive into coding, I showed that I had a talent for creating <span id = "projectHighlight">visually rich</span> and <span id = "projectHighlight">logically complex</span> products, even with the limited instruction I had been given at that time. </p>
-                    <div style = "display: flex; flex-wrap: wrap; gap: 3%">
-                        <div id="skillCard">HTML</div>
-                        <div id="skillCard">Javascript</div>
-                        <div id="skillCard">CSS</div>
-                        <div id="skillCard">Design</div>
-                        <div id="skillCard">Creativity</div>
-                    </div>
-                    <hr>
-                    <div style = "display: flex; justify-content: center; align-items: center; margin-top: 5%; gap : 5%">
-                        <a href = "https://juanitodelatorre.github.io/SpaceBattle/"><button id = "contactButton">Live Site</button></a>
-                        <a href = "https://github.com/JuanitoDeLaTorre/SpaceBattle"><button id = "contactButton">GH Repo</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projectCard">
-                <div style = "height: 30%; width: auto; border: solid var(--mainTextColor) 1px;">
-                    <img style = "height: 100%; width: auto; object-fit: cover;" src = "./resources/bicycles.jpg">
-                </div>
-                <div style = "height: 70%; text-align: center;">
-                    <h3>Bike Share Data Science</h3>
-                    <p style = "text-align: left;">This was the capstone project in Udacity's challenging <span id = "projectHighlight">Data Science with Python and Pandas</span>  course. This project shows my ability to ingest and manipulate complex raw data to gain <span id = "projectHighlight">valuable and actionable insights</span>.</p>
-                    <div style = "display: flex; flex-wrap: wrap; gap: 3%">
-                        <div id="skillCard">Python</div>
-                        <div id="skillCard">Pandas</div>
-                        <div id="skillCard">Numpy</div>
-                        <div id="skillCard">Data Manip</div>
-                        <div id="skillCard">Problem Solving</div>
-                    </div>
-                    <hr>
-                    <div style = "display: flex; justify-content: center; align-items: center; margin-top: 5%; gap : 5%">
-                        <a href = "https://github.com/JuanitoDeLaTorre/Python-Bike-Share-Project"><button id = "contactButton">GH Repo</button></a>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
-            <a href="#workWithMe" >
-                <svg id = "downButton" width="50" height="50" viewBox="0 0 50 50" fill="#0b2949" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_801_1484)">
-                    <path d="M30.8255 26.489L24.5755 32.739M24.5755 32.739L18.3255 26.489M24.5755 32.739L24.5755 16.0723M24.5755 43.1557C14.2202 43.1557 5.8255 34.761 5.8255 24.4057C5.8255 14.0503 14.2202 5.65567 24.5755 5.65567C34.9308 5.65567 43.3255 14.0503 43.3255 24.4057C43.3255 34.761 34.9308 43.1557 24.5755 43.1557ZM1140.06 1858.7L1139.06 1855.88C1138.97 1855.65 1138.67 1855.58 1138.5 1855.76L1134.23 1860.02C1134.14 1860.11 1134.11 1860.25 1134.15 1860.37L1134.82 1862.23C1134.87 1862.36 1134.84 1862.5 1134.74 1862.59L1130.78 1866.54C1130.69 1866.64 1130.54 1866.66 1130.41 1866.62C1130.04 1866.48 1129.63 1866.4 1129.21 1866.4C1128.99 1866.4 1128.77 1866.42 1128.56 1866.46C1127.1 1866.74 1125.96 1867.96 1125.78 1869.42C1125.56 1871.28 1126.73 1872.89 1128.56 1873.22C1130.4 1873.55 1132.23 1872.33 1132.59 1870.49C1132.63 1870.28 1132.65 1870.06 1132.65 1869.84C1132.65 1869.42 1132.57 1869.01 1132.43 1868.64C1132.39 1868.51 1132.41 1868.37 1132.51 1868.27L1136.51 1864.28C1136.6 1864.18 1136.74 1864.15 1136.86 1864.19L1138.61 1864.81C1138.73 1864.86 1138.87 1864.83 1138.96 1864.73L1143.23 1860.47C1143.4 1860.29 1143.33 1859.99 1143.1 1859.91L1140.27 1858.91C1140.18 1858.88 1140.1 1858.8 1140.06 1858.7ZM1129.2 1858.95C1130.27 1858.95 1131.3 1859.11 1132.27 1859.39C1132.42 1859.43 1132.5 1859.59 1132.45 1859.73L1131.86 1861.57C1131.81 1861.71 1131.66 1861.79 1131.51 1861.75C1130.78 1861.54 1130 1861.42 1129.2 1861.42C1124.56 1861.42 1120.8 1865.18 1120.8 1869.8C1120.8 1874.43 1124.56 1878.18 1129.2 1878.18C1133.83 1878.18 1137.59 1874.43 1137.59 1869.8C1137.59 1869.02 1137.49 1868.27 1137.29 1867.55C1137.24 1867.4 1137.32 1867.25 1137.47 1867.2L1139.31 1866.63C1139.45 1866.58 1139.61 1866.66 1139.65 1866.81C1139.92 1867.76 1140.07 1868.76 1140.07 1869.8C1140.07 1875.8 1135.2 1880.66 1129.2 1880.66C1123.19 1880.66 1118.33 1875.8 1118.33 1869.8C1118.33 1863.81 1123.19 1858.95 1129.2 1858.95Z" stroke="#717EAD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_801_1484">
-                    <rect width="50" height="50" fill="white"/>
-                    </clipPath>
-                    </defs>
+
+        <div class="projectCard">
+          <div style="height: 30%; width: auto; border: solid var(--mainTextColor) 1px">
+            <img style="height: 100%; width: auto; object-fit: cover" src="./resources/bicycles.jpg" />
+          </div>
+          <div style="height: 70%; text-align: center">
+            <h3>Bike Share Data Science</h3>
+            <p style="text-align: left">
+              This was the capstone project in Udacity's challenging <span id="projectHighlight">Data Science with Python and Pandas</span> course. This project shows my ability to
+              ingest and manipulate complex raw data to gain <span id="projectHighlight">valuable and actionable insights</span>.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 3%">
+              <div id="skillCard">Python</div>
+              <div id="skillCard">Pandas</div>
+              <div id="skillCard">Numpy</div>
+              <div id="skillCard">Data Manip</div>
+              <div id="skillCard">Problem Solving</div>
+            </div>
+            <hr />
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 5%; gap: 5%">
+              <a href="https://github.com/JuanitoDeLaTorre/Python-Bike-Share-Project"><button id="contactButton">GH Repo</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#workWithMe">
+        <svg id="downButton" width="50" height="50" viewBox="0 0 50 50" fill="#0b2949" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_801_1484)">
+            <path
+              d="M30.8255 26.489L24.5755 32.739M24.5755 32.739L18.3255 26.489M24.5755 32.739L24.5755 16.0723M24.5755 43.1557C14.2202 43.1557 5.8255 34.761 5.8255 24.4057C5.8255 14.0503 14.2202 5.65567 24.5755 5.65567C34.9308 5.65567 43.3255 14.0503 43.3255 24.4057C43.3255 34.761 34.9308 43.1557 24.5755 43.1557ZM1140.06 1858.7L1139.06 1855.88C1138.97 1855.65 1138.67 1855.58 1138.5 1855.76L1134.23 1860.02C1134.14 1860.11 1134.11 1860.25 1134.15 1860.37L1134.82 1862.23C1134.87 1862.36 1134.84 1862.5 1134.74 1862.59L1130.78 1866.54C1130.69 1866.64 1130.54 1866.66 1130.41 1866.62C1130.04 1866.48 1129.63 1866.4 1129.21 1866.4C1128.99 1866.4 1128.77 1866.42 1128.56 1866.46C1127.1 1866.74 1125.96 1867.96 1125.78 1869.42C1125.56 1871.28 1126.73 1872.89 1128.56 1873.22C1130.4 1873.55 1132.23 1872.33 1132.59 1870.49C1132.63 1870.28 1132.65 1870.06 1132.65 1869.84C1132.65 1869.42 1132.57 1869.01 1132.43 1868.64C1132.39 1868.51 1132.41 1868.37 1132.51 1868.27L1136.51 1864.28C1136.6 1864.18 1136.74 1864.15 1136.86 1864.19L1138.61 1864.81C1138.73 1864.86 1138.87 1864.83 1138.96 1864.73L1143.23 1860.47C1143.4 1860.29 1143.33 1859.99 1143.1 1859.91L1140.27 1858.91C1140.18 1858.88 1140.1 1858.8 1140.06 1858.7ZM1129.2 1858.95C1130.27 1858.95 1131.3 1859.11 1132.27 1859.39C1132.42 1859.43 1132.5 1859.59 1132.45 1859.73L1131.86 1861.57C1131.81 1861.71 1131.66 1861.79 1131.51 1861.75C1130.78 1861.54 1130 1861.42 1129.2 1861.42C1124.56 1861.42 1120.8 1865.18 1120.8 1869.8C1120.8 1874.43 1124.56 1878.18 1129.2 1878.18C1133.83 1878.18 1137.59 1874.43 1137.59 1869.8C1137.59 1869.02 1137.49 1868.27 1137.29 1867.55C1137.24 1867.4 1137.32 1867.25 1137.47 1867.2L1139.31 1866.63C1139.45 1866.58 1139.61 1866.66 1139.65 1866.81C1139.92 1867.76 1140.07 1868.76 1140.07 1869.8C1140.07 1875.8 1135.2 1880.66 1129.2 1880.66C1123.19 1880.66 1118.33 1875.8 1118.33 1869.8C1118.33 1863.81 1123.19 1858.95 1129.2 1858.95Z"
+              stroke="#717EAD"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_801_1484">
+              <rect width="50" height="50" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+
+      <!-- ONE MORE -->
+      <h1 id="workWithMe" style="color: var(--accentTeal); padding-top: 15vh">Work with Me</h1>
+      <div class="workWithMe" style="color: #c1c5d8">
+        <h1 style="text-align: center">What People Are Saying</h1>
+        <hr style="margin-bottom: 10%" />
+        <div style="width: 70%; line-height: 2; position: relative">
+          <img id="quote" src="resources/quote (1).png" style="left: -15%; top: -30%" />
+          <img id="quote" src="resources/quote (1).png" style="right: -10%; bottom: 10%; transform: scaleX(-1)" />
+          <h3>
+            John is the type of individual who always <span id="pullQuoteHighlight">brings a positive attitude</span> to class every day asking
+            <span id="pullQuoteHighlight">really important questions</span> during large lectures, which most students are afraid to do. Any company would be incredibly lucky to
+            add a <span id="pullQuoteHighlight">hard-working and talented</span> individual like John who will be an amazing addition not only technically but in terms of
+            <span id="pullQuoteHighlight">adding to the company culture!</span>
+          </h3>
+          <h1 style="margin-bottom: 10px">- Eric Fithian</h1>
+          <h3 style="margin-top: 0px">GA Lead Instructor</h3>
+        </div>
+        <br /><br /><br />
+        <div style="width: 70%; line-height: 2; position: relative; margin-left: 25%">
+          <img id="quote" src="resources/quote (1).png" style="left: -10%; top: -30%" />
+          <img id="quote" src="resources/quote (1).png" style="right: -10%; bottom: 0%; transform: scaleX(-1)" />
+          <h3 style="width: 100%; text-align: right">
+            The attribute of John that impressed me the most was his <span id="pullQuoteHighlight">engagement with his fellow students</span>. I have interacted with some very
+            talented students in the past who will blast through the material and then just log off. John is the complete opposite. While he did blast through the material, during
+            the entire semester he <span id="pullQuoteHighlight">tirelessly helped his fellow students</span> by debugging or lifting spirits when others were having trouble.
+          </h3>
+          <h1 style="margin-bottom: 10px; text-align: right">- Jason Horst</h1>
+          <h3 style="margin-top: 0px; text-align: right">GA Instructional Associate</h3>
+        </div>
+        <br /><br /><br />
+        <div style="width: 70%; line-height: 2; position: relative">
+          <img id="quote" src="resources/quote (1).png" style="left: -15%; top: -50%" />
+          <img id="quote" src="resources/quote (1).png" style="right: -10%; bottom: 0%; transform: scaleX(-1)" />
+          <h3>
+            John has a unique blend of an analytical and creative perspective that empowers him to <span id="pullQuoteHighlight">visualize the big picture</span>. When coupled with
+            his <span id="pullQuoteHighlight">keen communication skills</span>, he is able to convey design needs to his team yielding
+            <span id="pullQuoteHighlight">rapid solutions</span>.
+          </h3>
+          <h1 style="margin-bottom: 10px">- John Paul Haddad</h1>
+          <h3 style="margin-top: 0px">GA Instructional Associate</h3>
+        </div>
+      </div>
+      <h1 id="contact" style="color: var(--accentTeal); padding-top: 15vh; text-align: center">Let's Keep in Touch!</h1>
+      <div style="display: flex; justify-content: center; margin-bottom: 15vh">
+        <div class="formContainer">
+          <form action="https://formsubmit.co/2c477c695c56abef1a745c8e45db2b6a" method="POST">
+            <h4 style="color: white">Contact</h4>
+            <input type="text" name="name" placeholder="full name" required />
+            <input type="email" name="email" placeholder="email" style="width: 70%" required />
+            <textarea name="content" placeholder="message" required></textarea>
+            <button type="submit" id="contactButton" style="margin-left: 30%">SEND</button>
+          </form>
+          <div id="rightForm" style="width: 48%; padding-left: 3%">
+            <h4>Currently Seeking</h4>
+            <hr />
+            <ul style="margin-top: 15%; margin-bottom: 15%; line-height: 2.5">
+              <li style="color: var(--accentTeal); font-size: 1.2em; font-weight: 600">Junior Full Stack Dev Positions</li>
+              <li>Terrible Dad jokes</li>
+              <li>Music recommendations</li>
+            </ul>
+            <hr />
+            <div style="display: flex; justify-content: center; gap: 10%; margin-top: 10%">
+              <a href="https://github.com/JuanitoDeLaTorre" target="_blank">
+                <svg class="icon" id="githubIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="32px">
+                  <image
+                    x="0px"
+                    y="0px"
+                    width="30px"
+                    height="32px"
+                    xlink:href="data:img/png;base64,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"
+                  />
                 </svg>
-            </a>
-
-            
-            <!-- ONE MORE -->
-        <h1 id="workWithMe" style = "color: var(--accentTeal); padding-top: 15vh">Work with Me</h1>
-        <div class="workWithMe" style = "color: #c1c5d8">
-            <h1 style = "text-align: center;">What People Are Saying</h1>
-            <hr style = "margin-bottom: 10%;">
-            <div style = "width: 70%; line-height: 2; position: relative">
-                <img id = "quote" src = "resources/quote (1).png" style = "left: -15%; top: -30%">
-                <img id = "quote" src = "resources/quote (1).png" style = "right: -10%; bottom: 10%; transform: scaleX(-1);">
-                <h3 >John is the type of individual who always  <span id = "pullQuoteHighlight">brings a positive attitude</span> to class every day asking  <span id = "pullQuoteHighlight">really important questions</span> during large lectures, which most students are afraid to do. Any company would be incredibly lucky to add a  <span id = "pullQuoteHighlight">hard-working and talented</span> individual like John who will be an amazing addition not only technically but in terms of  <span id = "pullQuoteHighlight">adding to the company culture!</span></h3>
-                <h1 style = "margin-bottom: 10px;"> - Eric Fithian </h1>
-                <h3 style = "margin-top: 0px;">GA Lead Instructor</h3>
+              </a>
+              <a href="https://www.linkedin.com/in/john-steed-thomas/">
+                <svg class="icon" id="linkedinIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="32px">
+                  <image
+                    x="0px"
+                    y="0px"
+                    width="30px"
+                    height="32px"
+                    xlink:href="data:img/png;base64,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"
+                  />
+                </svg>
+              </a>
             </div>
-            <br><br><br>
-            <div style = "width: 70%; line-height: 2; position: relative; margin-left: 25%">
-                <img id = "quote" src = "resources/quote (1).png" style = "left: -10%; top: -30%">
-                <img id = "quote" src = "resources/quote (1).png" style = "right: -10%; bottom: 0%; transform: scaleX(-1);">
-                <h3 style = "width: 100%; text-align: right;">The attribute of John that impressed me the most was his <span id = "pullQuoteHighlight">engagement with his fellow students</span>. I have interacted with some very talented students in the past who will blast through the material and then just log off. John is the complete opposite. While he did blast through the material, during the entire semester he <span id = "pullQuoteHighlight">tirelessly helped his fellow students</span> by debugging or lifting spirits when others were having trouble.</h3>
-                <h1 style = "margin-bottom: 10px; text-align: right;"> - Jason Horst </h1>
-                <h3 style = "margin-top: 0px; text-align: right;">GA Instructional Associate</h3>
-            </div>
-            <br><br><br>
-            <div style = "width: 70%; line-height: 2; position: relative">
-                <img id = "quote" src = "resources/quote (1).png" style = "left: -15%; top: -50%">
-                <img id = "quote" src = "resources/quote (1).png" style = "right: -10%; bottom: 0%; transform: scaleX(-1);">
-                <h3 >John has a unique blend of an analytical and creative perspective that empowers him to <span id = "pullQuoteHighlight">visualize the big picture</span>. When coupled with his <span id = "pullQuoteHighlight">keen communication skills</span>, he is able to convey design needs to his team yielding <span id = "pullQuoteHighlight">rapid solutions</span>.</h3>
-                <h1 style = "margin-bottom: 10px;"> - John Paul Haddad </h1>
-                <h3 style = "margin-top: 0px;">GA Instructional Associate</h3>
-            </div>
+            <!-- <h3>Junior <span id = "pullQuoteHighlight">Full Stack Dev</span> Positions</h3> -->
+          </div>
         </div>
-        <h1 id = "contact" style = "color: var(--accentTeal); padding-top: 15vh; text-align: center;">Let's Keep in Touch!</h1>
-        <div style = "display: flex; justify-content: center; margin-bottom: 15vh;">
-            <div class="formContainer">
-                <form action="https://formsubmit.co/2c477c695c56abef1a745c8e45db2b6a" method="POST">
-                    <h4 style = "color: white">Contact</h4>
-                    <input type="text" name="name" placeholder = "full name" required>
-                    <input type="email" name="email" placeholder = "email" style = "width: 70%;" required>
-                    <textarea name = "content" placeholder = "message" required></textarea>
-                    <button type="submit" id = "contactButton" style = "margin-left: 30%">SEND</button>
-                </form>
-                <div id = "rightForm" style = "width: 48%; padding-left: 3%;">
-                    <h4>Currently Seeking</h4>
-                    <hr>
-                    <ul style = "margin-top: 15%; margin-bottom: 15%; line-height: 2.5;">
-                        <li style = "color: var(--accentTeal); font-size: 1.2em; font-weight: 600;">Junior Full Stack Dev Positions</li>
-                        <li>Terrible Dad jokes</li>
-                        <li>Music recommendations</li>
-                    </ul>
-                    <hr>
-                    <div style = "display: flex; justify-content: center; gap: 10%; margin-top: 10%">
-                        <a href="https://github.com/JuanitoDeLaTorre" target="_blank">
-                            <svg class = "icon" id = "githubIcon"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="30px" height="32px">
-                                <image  x="0px" y="0px" width="30px" height="32px"  xlink:href="data:img/png;base64,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" />
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/john-steed-thomas/">
-                            <svg class = "icon" id = "linkedinIcon"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="30px" height="32px">
-                                <image  x="0px" y="0px" width="30px" height="32px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUYAAAFGCAYAAAAW1zbwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH5wQWEDEbF3lCNwAAG25JREFUeNrt3XmUVPWd9/HPvXWret+g2ReLRVRERFQUd0DUqHGLiUlMHifx0UmezOQcJ2PMZoxxkjw+JuOcyTwzTyaJiYlxEo2DuwYEFASUyKagqIDFIkLTS/VKdy33Pn80KF5o6Oqurl/fqvfrnDqeQzfF91fSb363btUtS/LUa1csls7fIb0Wkd6fKV2+RWopkvaXSaXNUiolRWzJSUpdxZIlyZbkeVLKkUq2SemhkjtEUlJKSwq5kizJtaT5TRkMAyCvvFBjSZLstBT2pKQthUKSG5dCjVLyOMmyupPlupJCUrHT3Z20JcmViiNSMiEVJ6QnJ0uz3pFCnlS1vrtNntWrURwzj8CB4S4hhAAOuNjXgyVVlnrXsazLcRhdaU7Kk/aaWS2A4Jjb/FEol7k5TWTuwnhpgyfV5HJtAPLFBUM8qVlaUp2TQA58GOfGOVwGkB0He7KoakADOTBhtDxpPkEEMEDmHzjMfnn4gAQy+2Gc20oQAeTGeXXdvXlhaFYDaWflXg6eAr+snSgCyL2LG7LanuzsGK/eThABmHXxgafvlvb/BE3/doyepPnZLTUA9Muc/p/fyDyMlqS0LXUUSWe3EUUAg8/sDk8dESllqy8vEs88jAlbqmyX7nvVNb12AOjRv7yW0pCO7o1chjL7HZ4nOZ50Y5mnPnUYAHLEUkjz5KkrKSktWWlJbq9umYWxNSzNLOowvV4A6LUbUp5CxZIbkRQ+cHOOerM0qeEo92hJliuFE5I86afLWxR2K0yvEwAytrjM6r5yT6L7ql5HudKOpX9c0fMdebbkJKTqfdLpCU60AAi2xZWWirqOGUZHzaU934lnS7YjzSOKAPLAvBZPKxyr+/nGo4Ux1NnDlzzJC0mf2koUAeSPc1OeVkSso+8YS3Yf+SuuK4UMXccWAAbS/gpJ4R4/wMCR20P8LE+6rIPdIoD8c3GDpyW1lqyUjnRI7SgVOfw3eZKu4WMHAOSxufWeVruW3NBhX3JUlD78N5BEAIWgq7j7JLOPo9IjhPECLh8GoACcn/C08PCr8ThKFR3hu9tNjwsAueEcftkHW5arj93mNrJbBFA45rZ4cm0denPkHXLyxUqaHhEAcs/zpJD14fkVR6G6g1+RLrTYLQIoPPObPS0osQ6+dMeR81b3F+y0pGmmxwMAM/YkJKu7jY5SZ3ZH8lyuxg2ggH017Wlp9+dVOwpHuOQsAEhSiS25kqN2PqEAACRJXa5kebLlhaT5/f9ULQAIvAubPYU92XJSpkcBgMGjIyRbKS4tBgAfsiVLCx/mMBoADpH5B64CQJ4jjADgQxgBwIcwAoAPYQQAH8IIAD6EEQB8CCMA+BBGAPAhjADgQxgBwIcwAoAPYQQAH8IIAD6EEQB8CCMA+BBGAPAhjADgQxgBwIcwAoAPYQQAH8IIAD6EEQB8CCMA+BBGAPAhjADg45geII/EwulQqsYrajy+qHJLtLQ0NrGsfGtNJBIvd0JtbalUeVMiUV3XmRj+TnvLCVs62ybXe521+51ksaSo6eEBfIQw9k9sWLK0fk71iCWXjhr5ly9PiC7J9A4W7d075ZHtuz6zvKnu/Lft+BQRScA4Swsf9kwPEUCxGapdf8cJJ9772fHjXsnWnS6r3zf+Xza/e9vTrbuuTDppR0QSMIIwZiZ2oTNq2b0zpt9xVs2QPQP5B33lr2u/9Zv6LV9KOOmICCSQU4Sxd2IjU2V77p922m2fHZe9HWJvXLBk6e+Xp/ecJ+II5AxhPLbY9WXRPz96zuzbTQ3w0I4d59286ZVfJ5z0FNMPBlAICONROGl7y8+PP/PvvzJp4vOmZ1kTj9detWrZE7ud9tFi9wgMKMLYg5Kks3n1+ZecOa2iqs30LIc68S/P/YWz18DA4gXeR1CRjGxcdf782YMtipK0+dJPXDrTql0rKWZ6FiBfEUafUNretvzceeefWlEdNz1LT9ZcPP9TE9KVMRFHYEAQxo+LPT3jwitOrRq8UTxo22VXzKlIRQbdjhbIB4TxI7Hbhk29/7KRIzebHqS3njz9gk+KXSOQdYTxgJO8ms3/POPUfzU9RyYuGj4sdufI6feIOAJZRRi7xf7r7LM/Z3qIvvjhKSc/MCJVWmd6DiCfEEYp9sWKSQ+dWjn4n1fsya9mzLpZ7BqBrCn4MEZSTuJ3Z8+60/Qc/XHlqFEbZ1i1603PAeSLgg/jDTXHPWJ6hmz4p5On3Sl2jUBWFHoYY3efevJdpofIhitGjdo4Jl2+2/QcQD4o6DBOcavfmVBS5pqeI1u+MCr6e9MzAPmgoMN4y/iJvzQ9QzbdPDn6gO1a20zPAQRdwYbR8qzYNceNedz0HNl0fFlF4jivYofpOYCgK9gwjnPLd0wuLU+ZniPbzqwcstr0DEDQFWwYTymt3mh6hoEwZ/iIpaZnAIKuYMN4UmXlW6ZnGAhnDxvyinjZDtAvBRvGaVWVebljnFFVHY+kQgnTcwBBVrBhnFBRlrdnb8u8cIfpGYAgK8gwWp4VG1FSnLcXXiiyQp2mZwCCrEDDKPeEsoq8jUcJYQT6pSDDmO8sS3nzbh7AhIIMo2fJ3tTaXG56joHS5brFpmcAgqxAw+hFd3d0jjY9x0Bp85J5G30gFwoyjJK0pbVtsukZBkq7nSw1PQMQZAUbxs0trSeanmEgrI03DUmFXMf0HECQFWwY32iOn2J6hoGwcHfdJZKipucAgqxgw7ips3mq6RkGwqqG+tmmZwCCrmDDWOd0DN/QHK82PUe2rWlrPMP0DEDQFWwYJUV/t237/zA9RDatjTcNed9py9uz7UCuFHIY9ejenZ82PUM2/WpL7H+K5xeBfivoMO4MtY5d1diQNzush/a990XTMwD5oKDDKCn6401vfdv0ENnwh+07zmt1unhhN5AFhR5GPd2588rN7a2Bfwvdt97a8BNxGA1kRcGHUVL01tVrAv1pgf+xZdvlu0JtY03PAeQLwihpeeqD816o2xvYtwj+w7trfiZ2i0DWEMZu0c+sWfmo6SH64toVK+/vdFKBfyoAGEwI4wFNTmf1dStW3W96jkw8tH3HeY93bL9G7BaBrCKMH4ku6Ihd84NNb/6N6UF6Y308Xn3T5pUPiigCWUcYPy569+4Ndz2xe/cM04Mcy0Url7zk2t5E03MA+YgwHi567caXFvzXzp3nmB6kJ8OeffyvzeGuStNzAPmKMB6BZyl641sv/+GX2967xPQsh9rQ2lxd/ex/b6gP768Vh9DAgCGMPfAsRW/d+sovbv3rmu+YnkWSHn1/16zZyxeuag53TRdRBAaUpYUPe6aHGORiM1W79k/nzb5hckl5ysQAN7/y1+8/0LrlSyKIQE6wYzy26FrVX3fK0ufeuGfTWzm9TNnze/acOO7Zp5YTRSC32DFmJjYyWbbnGxNO+Nk/nnTCnwfqD3mhbu/kOza8fu9a1c8UQQRyjjD2TWx0smz3dSPGLfj56af9NFt3eu9bb3/2j7u237BeDTNEEAFjCGP/xEJp2x2n8h3Xjxj72PnDhy27aszo13v7m5fW1U1c1xif8fCuHTduSjZNPfDWvqjpRQGFjjBmV6w45XTWqrh+eLi4rsaJxCvD4ZYSO9ThyrObk8nqeDJZXZfsHF7n7h/eGk6UixACgw6fP5xd0U4npV1q0y6vTUqq++YXOnADMChxVhoAfAgjAPgQRgDwIYwA4EMYAcCHMAKAD2EEAB/CCAA+vMAb6L2Y7VpukeskShTqKLfCbZWhcMtQp6ixNBTqKLJDnRHLShSFQgnbstz2VKo04bqR/W66NOG6kaZUoroh3VXb6ibLE1Y6krDTET6eYnAijMCRxWpSxfFJ4Yot0yqq3jy5qvKNk6oqN18xatTGbP0B77a3RlbXN81a3xifsaOjfdy6tqaZMa8tmgylA/sZ5/mC90ofXSySCiUmhSq3TSwp31YWctrkSa68nDwF4VhWqtN1i2P726Nbki2T23L33upYJBVKTAxVbosWl8VCstxc/yWxJHmSdna1j3831TI5BxfYiJUnI22Tw5Vbrhs1ZsHlY0c9e3p1TX2Ol60tHa3OG43N0x/ZsevTK1rqz9tlt431LG8g140jIIw9i3256vjf/HrWGT80PchB97319me+F9twT8JJTxnIdV9TctzjC8475zbT6z3U19as++a/N27+qrIbx1hxyum8pGz0wqvHjXniyxOiS0yv029NvKn2qV0fXPngrm03xUKt0SyvHz0gjEcW+/Xk2TcP1h+UC1YufqkjnJw6EOv+P+Nm3nH7iSc8YnqdR/LAe7G5N29Z9Wv1Pw6x8emKHTeNjj74w+nTHjC9rt5a3rBv/N1vvHnX8v17z0s46UgWHgf0gDAeLvaTMTO//a2pJ/zR9CA9WdXYMPqcNQtXKMs/GPMjY3618MILbjG9vqPp584xFk1VxO45afqdX4iOf9n0Wvrj5lf/+v3fN733xWQo7fTxscBREEaf6lTx+qZPXHua6TmO5aIXX3zwpeQH2fwMmtg751x5wvFlFQnTazuWyPOPvJvhCYpYTaI4fs+UU+782vGTnzY9fzZ9YdWrP3q4ddvnPYs4ZhOvY/T5ZM2YQPzg3DJh4i+zeX+jUmV7ghBFSZpsV27J4NtjN5ZPfLjximtPy7coStJDs8/67uLTLp43MV25RFLM9Dz5gjD6nD+sdrnpGXrj5OrKjZZnxbJ1f9WhSNz0mnprbFHprl58W2xEsnT1wulzL31o9lnfNT3zQJozbNi2rZddMe+22pPvF3HMCsLoU+44baZn6I0ZVdXxkGtl7XOubVmu6TX1Vsg65rpjs6xhq/dcfvVZ80eMeMf0vLnyz6dN/9fHpl7wqbJk+E0RyH4hjD7pAn1McvXazGxIe97R3pgQu6ly8u9evfjiG0zPacJ1Y8asbbv8+pMnuVXbRBz7LDA/DDicx/8/v9i3R5zyk9+edeZdpgcxbcull8+bbQ9/RcSxT/jBQr6I3TXq1Lt/PH3af5oeZLBYOW/e5851Rq4UccwYYUQ+iP1w9Iy7fjBt6m9NDzLYvDxnzo2zQyPYOWaIMCLoYp+vmPTwnSef9DvTgwxWK+fO/dxEt5LnHDNAGBE4tnTwDHpsTnj0i384e1ZevxwnG7ZeesW8qlRRi+k5goIwIrCqk0XxJRdd+CXTcwTFc7Mu/ITlsWvsDcKIwNmd2D9aUuyFc+bMNz1LkMweOnT3T8bN/LY4pD4mwojAGeIUNX65espvTFwvMejuOOmEP86wateLOB4VV/BG4Lw456KbTM8QZOsunn+t8/yftqZDgXmzU86xYwQK0PfGnnKP2DX2iDACBegH06b+tiZVHDc9x2BFGIEC9YtpZ/yt2DUeEWEECtSnx41bPbH7YhPwIYxAAbt/2ozbxK7xMIQRKGBXjRn9+ohUaZ3pOQYbwggUuO9MmvojsWv8GMIIFLivTzn+ydJUuMP0HIMJYQSgueUjB91nqJtEGAHoeydzOH0owghAZw0ZsoeTMB8hjAAkSdcNG/eY6RkGC8IIQJL0hQnHPSQOpyURRgAHnDN06G7eP92NMAL40IzimvWmZxgMCCOAD10zZuwCcThNGAF85OtTJj9peZbpMYzjCt4oWJtaW8of3b7r+reaW06K7W+L1qW6hnd66WJXnm3LciOWnagOReLjikp3TSgre++CYcOWfXr82NWm5x5oI9Kle/Y47VHTc5hEGFFQXm1qHPmfb2+9dUHjrmvjTle1Z3nRD78YOvz7d0h6vatB6pL+rXFzLLIplJgSqnrn65Om/PyWSRMWml7PQDijfOhrT3e2n216DpMIIwrCpraW8r9/be3PX+zac5Fne1GF+3Q30YST1kY1Trl12yvTvvP2hvqvj5/y8zunTf2d6fVl0+k1NWue/mCH6TGM4jlG5L2vvLb2W9NffnbD0uQHf+PZh+wQ+ydaH95/xvc/2HD35OeeWbymOV5rep3ZMnvYkFdU4CdgCCPy2hmLFj32i6a3/9YNeRMH6I+IbnVa5s565flXf/r2O9ebXm82XDpi5OZwOpQyPYdJhBF5a+izC9asUf1MSdGB/rNc25t4+441931rwxtfMb3ubKj0Ii2mZzCJMCLvvN3eWlz57GNvNIY7hygHUTxE9N66jXf8+M3Nnzf9GPTXOKesoJ9kJIzIO+cuW7yiNZyYptxG8aDod99f96NFe/dOMf049MeUsop3TM9gEmFEXjnthUULGpz9QwyPEb16zfInTD8W/XFqddUG0zOYRBiRN777+sZb13v1M2Rmp/gx+8PJ4utWrLzf9Bx9dWJl5WbTM5hEGJEXNrU0l//vDzbeoUEQxQOiCzq2X7OysWG06UH6YkxpyW7TM5hEGJEXvrB69e9de8BektNX0X9Ytz6Qu8ahxeH6SMop2OcZCSMC78W6fdEDh9CDzqtu3ay18SbTz3lmbHJpRapcTpvpOUwhjAi8v9uw9v9q8BxC+0V/9tY73zA9RF/U2sX1pmcwhTAi0F5taBi5SY1TTc9xNM80vX+l6Rn6osaJxE3PYAphRKDd8fob92rw7hYlSc3hrson39893fQcmaoJRxpNz2AKYUSgreyqO8f0DL0Q/dOOnTeYHiJT1U44bnoGUwgjAuuXW9+7JBlKB+LSeatbGmaZniFTNZFIk+kZTCGMCKwHt8du0iA/jD4o5rVG321vjZieIxO1RUWcfAGCZm1Xw0zTM/RWKuROfjPeOqhPEvnVFkUIIxAkz3zwwbT9TrLY9ByZWLZ33wWmZ8hEdYSz0kCg/PfO969TQA6jD9rQEj/V9AyZKAmFOk3PYAphRCCtjjecaXqGTG3tbBtsb1k8qsqwU7AXqyWMCKSdqfbxpmfIVLOXqDY9QyYqwmHCCATFhuZ4dWsoUW56jkx1KFVqeoZMVEacFssrzA/FIowInHea26YMwivpHFPSdgPxmsuDplVUtVme5ZqewwTCiMCJdXRETc/QF67t2mviTXnzMav5jDAicDa3tJxoeoY+iu7r7ApYGC3TAxhBGBE4W9vbJpmeoa9aE6lK0zNkojCzSBgRQE2pYJ3dPVTCcwP1tkB5pgcwgzAicGwruCcECrQzgUMYgRxKu8E6M21Jgf1HqD8II5BDCTdgh9IFijACgA9hBNAjq0DPSxNGIIdCtp0yPUNGCvRsEWEEcihi2wnTM2SkMDeMhBHIpVCAX2pUSAgjkEOF+vKXoCGMAOBDGAHAhzACgA9hBAAfwggAPoQRAHwIIwD4EEYA8CGMAOBDGAHAhzACgA9hBAAfwggAPoQRAHwIIwD4EEYA8CGMAOBDGAHAhzACgA9hBAAfwggAPoQRAHwIIwD4EEYA8CGMAOBDGAHAhzACgA9hBAAfwggAPoQRAHwIIwD4EEYA8CGMAOBDGAHAhzACgA9hBAAfwggAPoQRAHwIIwD4EEYA8CGMAOBDGAHAhzACgA9hBAAfwggAPoQRAHwIIwD4EEYA8CGMAOBDGAHAhzACgA9hBAAfwggAPoQRAHwIIwD4EEafkGW5pmfoLUvK2qy2grNuO4vrzrVQgB5nSbK84D7W/UEYfRLpdMT0DL2xoSVe7Vpe1v7/ucrefeEoLNMDoDf4YfBZ1xSfYXqG3tjZvn+sa3sTs3V/7W6q1PSaeqsh1VVreoY+z97VNcT0DJlI2a5jegYTCKPPY3U7P2V6ht74Q2z7jdm8v/fVPtb0mnprV4Bm9Vtat2+O6Rl664FtsbmuXZhHEgW56KPZFWob+8T7u2eYnuNYHmmJfSab95cOufbX1qz7pul1HcvtG17/u3TIDezf28ebd1xjeobeum/L5tslRU3PYUJg/4INoOhnXn/5T2vj8UF7yDP++aeXD8C/5NF/b9z81Wf27Jlmen09eX7vnhN/WrfpGwrwD2vCSUemL1r4lOk5juV/rVn3zc1W04mm5zCFMB5BwklPOWfVolW/3LrtEtOzHGpp3b6Jo597ctXOUOtYDUwcoteue2nBv7275UrTa/X7f1u2XvbJdS89NUDrzqXoG2qYdtqiRQtMD9KTW1av+d5/NG7+qoL/WPeZpYUPe6aHGMRiI1KldVcMHf3MqdU160tCdmeuB0h5ct5taZ385L73r95qN09Ubv6yxkalyvZcOXTMU6cNqV7vWFYq1+s+uPYNTfHpT9TvunqP0z4yR2vPlVgobbtnhGtfu2rk6CeGFRfVmxymNZUqX76v/vxFLR9c0h5OlCq/HuuMEUYA8OFQGgB8CCMA+BBGAPAhjADgQxgBwIcwAoAPYQQAH8IIAD6EEQB8CCMA+BBGAPAhjADgQxgBwIcwAoAPYQQAH8IIAD6EEQB8CCMA+BBGAPAhjADgQxgBwIcwAoAPYQQAH8IIAD6EEQB8CCMA+Nj6S4VleggAGDSeHWLZCrFpBIAPFaVky3VMjwEAg0eiXbYsV1pUzeE0ACwqtRSKyJGVMj0KAAwOFaWSZ8mRTRgBQJLUtV+S5KhkbfcvvJK2dPY0z/RcAGDEyk2WnJAkyVHr1O5f9GgigAKWmih53a/SceSO/OgLCxOWLmmgkAAKy9JyS161pO7z0I6KukyPBABmubYkT5IrSbLlefrYbUkNL90BUDgWlltKu1I6re7/unKU9L/Amy4CKCDpw9/956ikzfdLlrS82NL5nTzXCCC/LYtYKu06bD/oqGj/4d9sueLCOwDyXlHXh2eiD+Woo+YI3+1JS0KW5nKGGkCeWlFlyUrrSE8f2kpFdPitSHIdaXEtTzgCyD/Lqyw5lqSwJOewm6OSo7TPCpseHwCyL1QipXs+ILYVstTjzbalVSPZNQLIH6tGWbJDknq+OYqkj3IPrqS0tKLY0rmcpQYQcEuHWorY3Zs+9Zw0R/Gio9yLJcmVEmnpmQpLV+wjjgCCaXGZJbtL3V07ehgtFSePfYeed+DOPOmpPxNHAMHy8lZL9sGOHfvZQUedGX60wX3Vlm6PE0cAwfCobWn4fsmxJbd3p0wyfxV32pYW7eKEDIDBzVNSd15sqTIlKSR5Rz/hcugt8zDaVndOXw4TRwCD1x/GRQ5cLCdjfXzfn9X9vCVX4gEwGL1c1t0mu2/P+vXvDdGepBeriCOAweOFKqu/FwnLzodKLx9mKZGU5nFSBoAhiyot7euShvf/rrJ7CZ0XhrJ7BJB7yw/sEu3sJCg7O8aDLE96fpilRIl01Q52jwAG1nPVlhxJxdnNTXbDKHXH0XKlxVWWXEuaz+E1gCxbXG0pNHBpyX4YP8aTFh5YwLxmAgmgf5ZUWvIG/hm73F2me3G1pWWNPAcJIHPLmiz9ZXjO+jHAO0Y/W1rqWEqXdx9ys4sE0JPFlZY8W7Jbu9/Ol0M5DqPPwhJLTkRyPcmzpPmEEihYS8q7d4ReSEp3dr87z5D/D62CzXMOB1M5AAAAAElFTkSuQmCC" />
-                            </svg>
-                        </a>
-                    </div>
-                    <!-- <h3>Junior <span id = "pullQuoteHighlight">Full Stack Dev</span> Positions</h3> -->
-                </div>
-            </div>
-
-        </div>
-        <h1 style = "color: var(--accentTeal); padding-top: 3vh; text-align: center;">Resume</h1>
+      </div>
+      <h1 style="color: var(--accentTeal); padding-top: 3vh; text-align: center">Resume</h1>
+      <a href="resources/ResumeForPortfolio.pdf" target="_blank">
+        <h3 style="color: var(--accentTeal); text-align: center">Click to download!</h3>
+      </a>
+      <div style="display: flex; justify-content: center">
         <a href="resources/ResumeForPortfolio.pdf" target="_blank">
-    
-            <h3 style = "color: var(--accentTeal); text-align: center;">Click to download!</h3>
+          <img id="resume" src="./resources/PortfolioScreenshot.png" alt="John Thomas resume" style="width: 39.5vw; height: auto; border: solid var(--accentTeal) 3px" />
         </a>
-        <div style = "display: flex; justify-content: center;">
-            <a href="resources/ResumeForPortfolio.pdf" target="_blank">
-    
-                <img id = "resume" src="./resources/PortfolioScreenshot.png" alt="John Thomas resume" style = "width: 39.5vw; height: auto; border: solid var(--accentTeal) 3px;">
-            </a>
-        </div>
-        
+      </div>
 
-
-
-
-
-
-
-
-        <!-- SIDE ICONS -->
-        <div class="sideIcons">
-            <a href="https://github.com/JuanitoDeLaTorre" target="_blank">
-                <svg class = "icon" id = "githubIcon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="30px" height="32px">
-                    <image  x="0px" y="0px" width="30px" height="32px"  xlink:href="data:img/png;base64,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" />
-                </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/john-steed-thomas/">
-                <svg class = "icon" id = "linkedinIcon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="30px" height="32px">
-                    <image  x="0px" y="0px" width="30px" height="32px"  xlink:href="data:img/png;base64,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" />
-                </svg>
-            </a>
-            <a href="#contact">
-                <svg id = "mailIcon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="32px" height="23px">
-                    <image  x="0px" y="0px" width="30px" height="23px"  xlink:href="data:img/png;base64,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" />
-                </svg>
-            </a>
-            <div id="verticalLine"></div>
-        </div>
+      <!-- SIDE ICONS -->
+      <div class="sideIcons">
+        <a href="https://github.com/JuanitoDeLaTorre" target="_blank">
+          <svg class="icon" id="githubIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="32px">
+            <image
+              x="0px"
+              y="0px"
+              width="30px"
+              height="32px"
+              xlink:href="data:img/png;base64,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"
+            />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/john-steed-thomas/">
+          <svg class="icon" id="linkedinIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="32px">
+            <image
+              x="0px"
+              y="0px"
+              width="30px"
+              height="32px"
+              xlink:href="data:img/png;base64,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"
+            />
+          </svg>
+        </a>
+        <a href="#contact">
+          <svg id="mailIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="23px">
+            <image
+              x="0px"
+              y="0px"
+              width="30px"
+              height="23px"
+              xlink:href="data:img/png;base64,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"
+            />
+          </svg>
+        </a>
+        <div id="verticalLine"></div>
+      </div>
     </div>
     <!-- <div style = "background-color: black; color: white; text-align: center; padding: 50px;">
         <h1 style = "text-shadow: 0px 0px 5px white;">GENERATE</h1>
     </div> -->
-</body>
+  </body>
 </html>
